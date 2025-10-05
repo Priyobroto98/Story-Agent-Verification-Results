@@ -1,0 +1,295 @@
+Individual Module Verification Result_json :
+
+=== Final Result Map ===
+{
+  "US-001": [
+    {
+      "ac_id": "AC-001",
+      "formula": "∀x (Customer(x) → CanNavigateToApplicationLoginPage(x))",
+      "status": "SAT",
+      "processing_time": 3.822042226791382,
+      "model": "[rule1 = True,\n Customer = [else -> True],\n CanNavigateToApplicationLoginPage = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-002",
+      "formula": "∀x (System(x) → (PresentsInputFields(x, username) ∧ PresentsInputFields(x, password)))",
+      "status": "SAT",
+      "processing_time": 8.892350673675537,
+      "model": "[rule1 = True,\n System = [else -> True],\n PresentsInputFields = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-003",
+      "formula": "∀x (Customer(x) → CanSubmitCredentialsForVerification(x))",
+      "status": "SAT",
+      "processing_time": 4.312143087387085,
+      "model": "[rule1 = True,\n Customer = [else -> False],\n CanSubmitCredentialsForVerification = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-004",
+      "formula": "∀x∀y (System(x) ∧ SubmittedCredentials(y) ∧ StoredCustomerRecords(x) → ValidatesAgainst(x, y))",
+      "status": "SAT",
+      "processing_time": 8.365269899368286,
+      "model": "[rule1 = True,\n System = [else -> True],\n SubmittedCredentials = [else -> False],\n ValidatesAgainst = [else -> False],\n StoredCustomerRecords = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-005",
+      "formula": "∀x (ValidCredentials(x) → GrantsAccessToApplicationDashboard(x))",
+      "status": "SAT",
+      "processing_time": 3.5985286235809326,
+      "model": "[rule1 = True,\n GrantsAccessToApplicationDashboard = [else -> True],\n ValidCredentials = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-006",
+      "formula": "∀x (System(x) ∧ ¬ValidCredentials(x) → DisplayAuthenticationErrorMessage(x))",
+      "status": "SAT",
+      "processing_time": 4.482785940170288,
+      "model": "[rule1 = True,\n System = [else -> False],\n DisplayAuthenticationErrorMessage = [else -> True],\n ValidCredentials = [else -> True]]"
+    },
+    {
+      "ac_id": "compounded_ac",
+      "formula": "(∀x (Customer(x) → CanNavigateToApplicationLoginPage(x))) ∧ (∀x (System(x) → (PresentsInputFields(x, username) ∧ PresentsInputFields(x, password)))) ∧ (∀x (Customer(x) → CanSubmitCredentialsForVerification(x))) ∧ (∀x∀y (System(x) ∧ SubmittedCredentials(y) ∧ StoredCustomerRecords(x) → ValidatesAgainst(x, y))) ∧ (∀x (ValidCredentials(x) → GrantsAccessToApplicationDashboard(x))) ∧ (∀x (System(x) ∧ ¬ValidCredentials(x) → DisplayAuthenticationErrorMessage(x)))",
+      "status": "SAT",
+      "processing_time": 8.87371563911438,
+      "model": "[rule4 = True,\n rule5 = True,\n rule2 = True,\n rule1 = True,\n password_field = 0,\n rule3 = True,\n rule6 = True,\n username_field = 0,\n System = [else -> False],\n SubmittedCredentials = [else -> True],\n ValidCredentials = [else -> False],\n StoredCustomerRecords = [else -> True],\n DisplayAuthenticationErrorMessage = [else -> False],\n PresentsInputFields = [else -> True],\n Customer = [else -> False],\n CanNavigateToApplicationLoginPage = [else -> True],\n GrantsAccessToApplicationDashboard = [else -> False],\n CanSubmitCredentialsForVerification = [else -> True],\n ValidatesAgainst = [else -> True]]"
+    },
+    {
+      "ac_id": "story_level",
+      "formula": "((∀x (Customer(x) → CanNavigateToApplicationLoginPage(x))) ∧ (∀x (System(x) → (PresentsInputFields(x, username) ∧ PresentsInputFields(x, password)))) ∧ (∀x (Customer(x) → CanSubmitCredentialsForVerification(x))) ∧ (∀x∀y (System(x) ∧ SubmittedCredentials(y) ∧ StoredCustomerRecords(x) → ValidatesAgainst(x, y))) ∧ (∀x (ValidCredentials(x) → GrantsAccessToApplicationDashboard(x))) ∧ (∀x (System(x) ∧ ¬ValidCredentials(x) → DisplayAuthenticationErrorMessage(x)))) ∧ (∀x∀y (System(x) ∧ Customer(y) ∧ ValidatesCredentials(x, y) → ProvidesSecureAccess(x, y)))",
+      "status": "SAT",
+      "processing_time": 17.48896098136902,
+      "model": "[rule4 = True,\n rule5 = True,\n username_field = 0,\n rule7 = True,\n rule1 = True,\n password_field = 0,\n rule3 = True,\n rule6 = True,\n rule2 = True,\n System = [else -> False],\n SubmittedCredentials = [else -> True],\n ValidatesCredentials = [else -> False],\n ValidCredentials = [else -> True],\n StoredCustomerRecords = [else -> False],\n ProvidesSecureAccess = [else -> True],\n DisplayAuthenticationErrorMessage = [else -> True],\n PresentsInputFields = [else -> False],\n Customer = [else -> False],\n CanNavigateToApplicationLoginPage = [else -> True],\n GrantsAccessToApplicationDashboard = [else -> True],\n CanSubmitCredentialsForVerification = [else -> True],\n ValidatesAgainst = [else -> False]]"
+    }
+  ],
+  "US-002": [
+    {
+      "ac_id": "AC-007",
+      "formula": "∀x (Customer(x) ∧ LoggedIn(x) → CanAccessProfileCreationPage(x))",
+      "status": "SAT",
+      "processing_time": 4.775742769241333,
+      "model": "[rule1 = True,\n Customer = [else -> False],\n LoggedIn = [else -> True],\n CanAccessProfileCreationPage = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-008",
+      "formula": "∀x (System(x) → PresentsForm(x, CapturePersonalDetails))",
+      "status": "SAT",
+      "processing_time": 6.4896581172943115,
+      "model": "[CapturePersonalDetails = 0,\n rule1 = True,\n System = [else -> True],\n PresentsForm = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-009",
+      "formula": "∀x (System(x) → PresentsQuestionnaire(x))",
+      "status": "SAT",
+      "processing_time": 4.300114870071411,
+      "model": "[rule1 = True,\n System = [else -> False],\n PresentsQuestionnaire = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-010",
+      "formula": "∀x∀y (System(x) ∧ Customer(y) ∧ Questionnaire(y) → CalculatesRiskScore(x, y))",
+      "status": "SAT",
+      "processing_time": 4.681607961654663,
+      "model": "[rule1 = True,\n Customer = [else -> True],\n System = [else -> False],\n CalculatesRiskScore = [else -> False],\n Questionnaire = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-011",
+      "formula": "∀x (System(x) ∧ Customer(y) → AllowsInputOfInitialInvestmentAmount(y, x))",
+      "status": "SAT",
+      "processing_time": 5.917213678359985,
+      "model": "[rule1 = True,\n y = 2,\n Customer = [else -> False],\n System = [else -> False],\n AllowsInputOfInitialInvestmentAmount = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-012",
+      "formula": "∀x (InvestmentAmount(x) → PositiveNumericalValue(x))",
+      "status": "SAT",
+      "processing_time": 3.6777994632720947,
+      "model": "[rule1 = True,\n InvestmentAmount = [else -> False],\n PositiveNumericalValue = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-013",
+      "formula": "∀x (SubmissionOfValidInformation(x) → CreateCompleteCustomerProfileRecord(x))",
+      "status": "SAT",
+      "processing_time": 3.661749839782715,
+      "model": "[rule1 = True,\n CreateCompleteCustomerProfileRecord = [else -> True],\n SubmissionOfValidInformation = [else -> False]]"
+    },
+    {
+      "ac_id": "compounded_ac",
+      "formula": "(∀x (Customer(x) ∧ LoggedIn(x) → CanAccessProfileCreationPage(x))) ∧ (∀x (System(x) → PresentsForm(x, CapturePersonalDetails))) ∧ (∀x (System(x) → PresentsQuestionnaire(x))) ∧ (∀x∀y (System(x) ∧ Customer(y) ∧ Questionnaire(y) → CalculatesRiskScore(x, y))) ∧ (∀x (System(x) ∧ Customer(y) → AllowsInputOfInitialInvestmentAmount(y, x))) ∧ (∀x (InvestmentAmount(x) → PositiveNumericalValue(x))) ∧ (∀x (SubmissionOfValidInformation(x) → CreateCompleteCustomerProfileRecord(x)))",
+      "status": "SAT",
+      "processing_time": 18.17805552482605,
+      "model": "[rule4 = True,\n rule5 = True,\n rule7 = True,\n rule1 = True,\n rule3 = True,\n CapturePersonalDetails_const = 0,\n rule6 = True,\n rule2 = True,\n System = [else -> False],\n PresentsForm = [else -> False],\n CreateCompleteCustomerProfileRecord = [else -> False],\n Questionnaire = [else -> False],\n CanAccessProfileCreationPage = [else -> True],\n PresentsQuestionnaire = [else -> False],\n Customer = [else -> False],\n InvestmentAmount = [else -> False],\n SubmissionOfValidInformation = [else -> False],\n AllowsInputOfInitialInvestmentAmount = [else -> False],\n CalculatesRiskScore = [else -> True],\n PositiveNumericalValue = [else -> True],\n LoggedIn = [else -> False]]"
+    },
+    {
+      "ac_id": "story_level",
+      "formula": "((∀x (Customer(x) ∧ LoggedIn(x) → CanAccessProfileCreationPage(x))) ∧ (∀x (System(x) → PresentsForm(x, CapturePersonalDetails))) ∧ (∀x (System(x) → PresentsQuestionnaire(x))) ∧ (∀x∀y (System(x) ∧ Customer(y) ∧ Questionnaire(y) → CalculatesRiskScore(x, y))) ∧ (∀x (System(x) ∧ Customer(y) → AllowsInputOfInitialInvestmentAmount(y, x))) ∧ (∀x (InvestmentAmount(x) → PositiveNumericalValue(x))) ∧ (∀x (SubmissionOfValidInformation(x) → CreateCompleteCustomerProfileRecord(x)))) ∧ (∀x (InvestmentAccount(x) → (CapturesCustomerDetails(x) ∧ CapturesRiskProfile(x) ∧ CapturesInvestmentAmount(x))))",
+      "status": "SAT",
+      "processing_time": 22.584784507751465,
+      "model": "[rule4 = True,\n rule5 = True,\n rule7 = True,\n rule8 = True,\n rule1 = True,\n rule3 = True,\n CapturePersonalDetails = 0,\n rule6 = True,\n rule2 = True,\n System = [else -> False],\n CapturesCustomerDetails = [else -> True],\n CapturesInvestmentAmount = [else -> True],\n PresentsForm = [else -> True],\n CreateCompleteCustomerProfileRecord = [else -> True],\n CanAccessProfileCreationPage = [else -> True],\n Questionnaire = [else -> True],\n PresentsQuestionnaire = [else -> True],\n Customer = [else -> False],\n InvestmentAmount = [else -> False],\n InvestmentAccount = [else -> True],\n CapturesRiskProfile = [else -> True],\n SubmissionOfValidInformation = [else -> True],\n AllowsInputOfInitialInvestmentAmount = [else -> True],\n CalculatesRiskScore = [else -> False],\n PositiveNumericalValue = [else -> False],\n LoggedIn = [else -> False]]"
+    }
+  ],
+  "US-003": [
+    {
+      "ac_id": "AC-014",
+      "formula": "∀x (System(x) → (PeriodicallyQueriesExternalSources(x) ∧ ForFixedDepositInterestRates(x)))",
+      "status": "SAT",
+      "processing_time": 3.6997313499450684,
+      "model": "[rule1 = True,\n System = [else -> False],\n PeriodicallyQueriesExternalSources = [else -> True],\n ForFixedDepositInterestRates = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-015",
+      "formula": "∀x (System(x) → (QueriesExternalSources(x) ∧ ForStockPrices(x)))",
+      "status": "SAT",
+      "processing_time": 4.779845237731934,
+      "model": "[rule1 = True,\n System = [else -> False],\n QueriesExternalSources = [else -> False],\n ForStockPrices = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-016",
+      "formula": "∀x (System(x) → (∃y (ExternalSource(y) ∧ QueriesNAVs(x, y))))",
+      "status": "SAT",
+      "processing_time": 5.2749717235565186,
+      "model": "[rule1 = True,\n QueriesNAVs = [else -> False],\n System = [else -> False],\n ExternalSource = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-017",
+      "formula": "∀x (MarketData(x) ∧ Fetched(x) → HasPreciseTimestamp(x))",
+      "status": "SAT",
+      "processing_time": 4.1716790199279785,
+      "model": "[rule1 = True,\n Fetched = [else -> False],\n MarketData = [else -> True],\n HasPreciseTimestamp = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-018",
+      "formula": "∀x (System(x) ∧ UnavailableExternalDataSource(x) → (LogError(x) ∧ AttemptRetry(x)))",
+      "status": "SAT",
+      "processing_time": 4.668606281280518,
+      "model": "[rule1 = True,\n System = [else -> False],\n AttemptRetry = [else -> False],\n UnavailableExternalDataSource = [else -> True],\n LogError = [else -> False]]"
+    },
+    {
+      "ac_id": "compounded_ac",
+      "formula": "(∀x (System(x) → (PeriodicallyQueriesExternalSources(x) ∧ ForFixedDepositInterestRates(x)))) ∧ (∀x (System(x) → (QueriesExternalSources(x) ∧ ForStockPrices(x)))) ∧ (∀x (System(x) → (∃y (ExternalSource(y) ∧ QueriesNAVs(x, y))))) ∧ (∀x (MarketData(x) ∧ Fetched(x) → HasPreciseTimestamp(x))) ∧ (∀x (System(x) ∧ UnavailableExternalDataSource(x) → (LogError(x) ∧ AttemptRetry(x))))",
+      "status": "SAT",
+      "processing_time": 10.874293088912964,
+      "model": "[rule4 = True,\n rule5 = True,\n rule3 = True,\n rule1 = True,\n rule2 = True,\n System = [else -> False],\n ForFixedDepositInterestRates = [else -> True],\n Fetched = [else -> True],\n MarketData = [else -> False],\n HasPreciseTimestamp = [else -> False],\n LogError = [else -> False],\n UnavailableExternalDataSource = [else -> False],\n QueriesNAVs = [else -> True],\n PeriodicallyQueriesExternalSources = [else -> True],\n ExternalSource = [else -> True],\n AttemptRetry = [else -> True],\n ForStockPrices = [else -> False],\n QueriesExternalSources = [else -> False]]"
+    },
+    {
+      "ac_id": "story_level",
+      "formula": "((∀x (System(x) → (PeriodicallyQueriesExternalSources(x) ∧ ForFixedDepositInterestRates(x)))) ∧ (∀x (System(x) → (QueriesExternalSources(x) ∧ ForStockPrices(x)))) ∧ (∀x (System(x) → (∃y (ExternalSource(y) ∧ QueriesNAVs(x, y))))) ∧ (∀x (MarketData(x) ∧ Fetched(x) → HasPreciseTimestamp(x))) ∧ (∀x (System(x) ∧ UnavailableExternalDataSource(x) → (LogError(x) ∧ AttemptRetry(x))))) ∧ (∀x (System(x) ∧ FetchesRealTimeMarketData(x) ∧ StoresRealTimeMarketData(x) → EnsuresCurrentInvestmentAnalysis(x)))",
+      "status": "SAT",
+      "processing_time": 14.770073413848877,
+      "model": "[rule4 = True,\n rule5 = True,\n rule6 = True,\n rule3 = True,\n rule1 = True,\n rule2 = True,\n System = [else -> False],\n ForFixedDepositInterestRates = [else -> True],\n StoresRealTimeMarketData = [else -> True],\n Fetched = [else -> False],\n MarketData = [else -> True],\n HasPreciseTimestamp = [else -> True],\n LogError = [else -> True],\n UnavailableExternalDataSource = [else -> False],\n QueriesNAVs = [else -> True],\n EnsuresCurrentInvestmentAnalysis = [else -> True],\n FetchesRealTimeMarketData = [else -> False],\n PeriodicallyQueriesExternalSources = [else -> True],\n ExternalSource = [else -> True],\n AttemptRetry = [else -> False],\n QueriesExternalSources = [else -> False],\n ForStockPrices = [else -> True]]"
+    }
+  ],
+  "US-004": [
+    {
+      "ac_id": "AC-019",
+      "formula": "∀x (Manager(x) → CanAccessInvestmentDecisionDashboard(x))",
+      "status": "SAT",
+      "processing_time": 5.132946729660034,
+      "model": "[rule1 = True,\n Manager = [else -> False],\n CanAccessInvestmentDecisionDashboard = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-020",
+      "formula": "∀x (System(x) → DisplaysTotalPooledCustomerInvestments(x))",
+      "status": "SAT",
+      "processing_time": 3.950669050216675,
+      "model": "[rule1 = True,\n System = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-021",
+      "formula": "∀x (System(x) ∧ InvestmentOptions(x) → AnalyzesLatestMarketData(x))",
+      "status": "SAT",
+      "processing_time": 5.932649850845337,
+      "model": "[rule1 = True,\n System = [else -> True],\n InvestmentOptions = [else -> False],\n AnalyzesLatestMarketData = [else -> True]]"
+    },
+    {
+      "ac_id": "AC-022",
+      "formula": "∀x (System(x) → (GeneratesSuggestedInvestments(x) ∧ RanksByPotentialReturn(x)))",
+      "status": "SAT",
+      "processing_time": 4.649569511413574,
+      "model": "[rule1 = True,\n GeneratesSuggestedInvestments = [else -> False],\n System = [else -> False],\n RanksByPotentialReturn = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-023",
+      "formula": "∀x (InvestmentSuggestion(x) → (IncludesInvestmentType(x) ∧ IncludesInvestmentName(x) ∧ IncludesExpectedReturn(x) ∧ IncludesRiskLevel(x)))",
+      "status": "SAT",
+      "processing_time": 4.584701776504517,
+      "model": "[rule1 = True,\n IncludesRiskLevel = [else -> True],\n IncludesExpectedReturn = [else -> False],\n IncludesInvestmentName = [else -> False],\n IncludesInvestmentType = [else -> False],\n InvestmentSuggestion = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-024",
+      "formula": "∀x (InvestmentAnalysis(x) → CalculatesPotentialOutcomesAgainstTargetReturnRate(x, 10))",
+      "status": "SAT",
+      "processing_time": 4.506375789642334,
+      "model": "[rule1 = True,\n CalculatesPotentialOutcomesAgainstTargetReturnRate = [else ->\n                                        True],\n InvestmentAnalysis = [else -> False]]"
+    },
+    {
+      "ac_id": "compounded_ac",
+      "formula": "(∀x (Manager(x) → CanAccessInvestmentDecisionDashboard(x))) ∧ (∀x (System(x) → DisplaysTotalPooledCustomerInvestments(x))) ∧ (∀x (System(x) ∧ InvestmentOptions(x) → AnalyzesLatestMarketData(x))) ∧ (∀x (System(x) → (GeneratesSuggestedInvestments(x) ∧ RanksByPotentialReturn(x)))) ∧ (∀x (InvestmentSuggestion(x) → (IncludesInvestmentType(x) ∧ IncludesInvestmentName(x) ∧ IncludesExpectedReturn(x) ∧ IncludesRiskLevel(x)))) ∧ (∀x (InvestmentAnalysis(x) → CalculatesPotentialOutcomesAgainstTargetReturnRate(x, 10)))",
+      "status": "SAT",
+      "processing_time": 15.687363386154175,
+      "model": "[rule4 = True,\n rule5 = True,\n rule6 = True,\n rule3 = True,\n rule1 = True,\n rule2 = True,\n System = [else -> False],\n InvestmentOptions = [else -> True],\n IncludesRiskLevel = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> False],\n GeneratesSuggestedInvestments = [else -> False],\n RanksByPotentialReturn = [else -> True],\n AnalyzesLatestMarketData = [else -> False],\n InvestmentAnalysis = [else -> False],\n IncludesInvestmentType = [else -> False],\n IncludesInvestmentName = [else -> True],\n InvestmentSuggestion = [else -> False],\n Manager = [else -> True],\n IncludesExpectedReturn = [else -> True],\n CalculatesPotentialOutcomesAgainstTargetReturnRate = [else ->\n                                        True],\n CanAccessInvestmentDecisionDashboard = [else -> True]]"
+    },
+    {
+      "ac_id": "story_level",
+      "formula": "((∀x (Manager(x) → CanAccessInvestmentDecisionDashboard(x))) ∧ (∀x (System(x) → DisplaysTotalPooledCustomerInvestments(x))) ∧ (∀x (System(x) ∧ InvestmentOptions(x) → AnalyzesLatestMarketData(x))) ∧ (∀x (System(x) → (GeneratesSuggestedInvestments(x) ∧ RanksByPotentialReturn(x)))) ∧ (∀x (InvestmentSuggestion(x) → (IncludesInvestmentType(x) ∧ IncludesInvestmentName(x) ∧ IncludesExpectedReturn(x) ∧ IncludesRiskLevel(x)))) ∧ (∀x (InvestmentAnalysis(x) → CalculatesPotentialOutcomesAgainstTargetReturnRate(x, 10)))) ∧ (∀x (System(x) ∧ PooledFunds(x) ∧ MarketData(x) → ProvidesAlgorithmicInvestmentSuggestions(x)))",
+      "status": "SAT",
+      "processing_time": 16.454394578933716,
+      "model": "[rule4 = True,\n rule5 = True,\n rule6 = True,\n rule3 = True,\n rule7 = True,\n rule1 = True,\n rule2 = True,\n System = [else -> False],\n InvestmentOptions = [else -> True],\n IncludesRiskLevel = [else -> False],\n PooledFunds = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> False],\n ProvidesAlgorithmicInvestmentSuggestions = [else -> True],\n GeneratesSuggestedInvestments = [else -> True],\n RanksByPotentialReturn = [else -> False],\n AnalyzesLatestMarketData = [else -> False],\n MarketData = [else -> True],\n InvestmentAnalysis = [else -> False],\n IncludesInvestmentType = [else -> False],\n IncludesInvestmentName = [else -> True],\n InvestmentSuggestion = [else -> False],\n Manager = [else -> False],\n IncludesExpectedReturn = [else -> True],\n CalculatesPotentialOutcomesAgainstTargetReturnRate = [else ->\n                                        False],\n CanAccessInvestmentDecisionDashboard = [else -> False]]"
+    }
+  ],
+  "US-005": [
+    {
+      "ac_id": "AC-025",
+      "formula": "∀x (Customer(x) ∧ SuccessfulLogin(x) → NavigateToPortfolioDashboard(x))",
+      "status": "SAT",
+      "processing_time": 4.485091924667358,
+      "model": "[rule1 = True,\n Customer = [else -> True],\n NavigateToPortfolioDashboard = [else -> False],\n SuccessfulLogin = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-026",
+      "formula": "∀x (System(x) ∧ Customer(y) → DisplaysTotalInitialInvestment(x, y))",
+      "status": "SAT",
+      "processing_time": 14.582898378372192,
+      "model": "[rule1 = True,\n y = 0,\n DisplaysTotalInitialInvestment = [else -> False],\n System = [else -> False],\n Customer = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-027",
+      "formula": "∀x∀y (System(x) ∧ Customer(y) ∧ AllocatedInvestments(y, x) → DisplaysDetailedBreakdown(x, y))",
+      "status": "SAT",
+      "processing_time": 5.141485691070557,
+      "model": "[rule1 = True,\n Customer = [else -> False],\n System = [else -> True],\n AllocatedInvestments = [else -> False],\n DisplaysDetailedBreakdown = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-028",
+      "formula": "∀x (Investment(x) → ShowsCurrentMarketValue(x))",
+      "status": "SAT",
+      "processing_time": 3.654808521270752,
+      "model": "[rule1 = True,\n Investment = [else -> False],\n ShowsCurrentMarketValue = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-029",
+      "formula": "∀x (System(x) ∧ DisplaysPortfolioGainOrLoss(x) → DisplaysPercentage(x))",
+      "status": "SAT",
+      "processing_time": 4.003544330596924,
+      "model": "[rule1 = True,\n System = [else -> True],\n DisplaysPercentage = [else -> False],\n DisplaysPortfolioGainOrLoss = [else -> False]]"
+    },
+    {
+      "ac_id": "AC-030",
+      "formula": "∀x (PortfolioData(x) → UpdatedUsingMostRecentMarketData(x))",
+      "status": "SAT",
+      "processing_time": 3.5679171085357666,
+      "model": "[rule1 = True,\n PortfolioData = [else -> False],\n UpdatedUsingMostRecentMarketData = [else -> False]]"
+    },
+    {
+      "ac_id": "compounded_ac",
+      "formula": "(∀x (Customer(x) ∧ SuccessfulLogin(x) → NavigateToPortfolioDashboard(x))) ∧ (∀x (System(x) ∧ Customer(y) → DisplaysTotalInitialInvestment(x, y))) ∧ (∀x∀y (System(x) ∧ Customer(y) ∧ AllocatedInvestments(y, x) → DisplaysDetailedBreakdown(x, y))) ∧ (∀x (Investment(x) → ShowsCurrentMarketValue(x))) ∧ (∀x (System(x) ∧ DisplaysPortfolioGainOrLoss(x) → DisplaysPercentage(x))) ∧ (∀x (PortfolioData(x) → UpdatedUsingMostRecentMarketData(x)))",
+      "status": "SAT",
+      "processing_time": 12.992815971374512,
+      "model": "[rule4 = True,\n rule5 = True,\n rule6 = True,\n rule3 = True,\n rule1 = True,\n rule2 = True,\n System = [else -> False],\n AllocatedInvestments = [else -> True],\n ShowsCurrentMarketValue = [else -> False],\n UpdatedUsingMostRecentMarketData = [else -> False],\n DisplaysDetailedBreakdown = [else -> True],\n PortfolioData = [else -> False],\n DisplaysPortfolioGainOrLoss = [else -> False],\n Customer = [else -> True],\n Investment = [else -> False],\n SuccessfulLogin = [else -> False],\n DisplaysTotalInitialInvestment = [else -> True],\n NavigateToPortfolioDashboard = [else -> False],\n DisplaysPercentage = [else -> False]]"
+    },
+    {
+      "ac_id": "story_level",
+      "formula": "((∀x (Customer(x) ∧ SuccessfulLogin(x) → NavigateToPortfolioDashboard(x))) ∧ (∀x (System(x) ∧ Customer(y) → DisplaysTotalInitialInvestment(x, y))) ∧ (∀x∀y (System(x) ∧ Customer(y) ∧ AllocatedInvestments(y, x) → DisplaysDetailedBreakdown(x, y))) ∧ (∀x (Investment(x) → ShowsCurrentMarketValue(x))) ∧ (∀x (System(x) ∧ DisplaysPortfolioGainOrLoss(x) → DisplaysPercentage(x))) ∧ (∀x (PortfolioData(x) → UpdatedUsingMostRecentMarketData(x)))) ∧ (∀x∀y (System(x) ∧ Customer(y) → DisplaysRealTimePortfolioValueAndPerformance(x, y)))",
+      "status": "SAT",
+      "processing_time": 20.493600368499756,
+      "model": "[rule4 = True,\n rule5 = True,\n rule6 = True,\n rule3 = True,\n rule7 = True,\n rule1 = True,\n rule2 = True,\n System = [else -> True],\n AllocatedInvestments = [else -> True],\n ShowsCurrentMarketValue = [else -> True],\n UpdatedUsingMostRecentMarketData = [else -> True],\n DisplaysDetailedBreakdown = [else -> True],\n PortfolioData = [else -> True],\n DisplaysPortfolioGainOrLoss = [else -> True],\n Customer = [else -> False],\n DisplaysRealTimePortfolioValueAndPerformance = [else ->\n                                        True],\n Investment = [else -> False],\n SuccessfulLogin = [else -> True],\n DisplaysTotalInitialInvestment = [else -> False],\n NavigateToPortfolioDashboard = [else -> False],\n DisplaysPercentage = [else -> True]]"
+    }
+  ]
+}

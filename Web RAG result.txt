@@ -1,0 +1,703 @@
+Web RAG result :
+
+1.  Develop LLM-driven application-builder.
+
+→ Fetching business rules for: '1. ...'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+1.  Prioritize secure LLM deployment, preferably in private cloud or on-premises setups, especially when handling sensitive business data within the application builder.
+2.  Implement robust data protection measures, including data minimization, encryption, and secure data storage, to comply with privacy regulations (e.g., GDPR, CCPA, HIPAA, PCI) for the application builder.
+3.  Establish strict policies for handling sensitive data (PII, HR/employment, financial) within the application builder, requiring stringent review and escalation for its use.
+4.  Prohibit data inputs from training underlying public LLM models used by the application builder to prevent data exposure.
+5.  Implement data retention policies for data inputs to the application builder, especially PII (e.g., no longer than 30 days without training).
+6.  Safeguard proprietary or sensitive code; do not allow its input into public LLMs through the application builder.
+7.  Carefully control and review the application builder's use of AI to access system credentials, especially for third-party systems.
+8.  Apply content filtering to the application builder's LLM outputs to prevent disallowed content, such as revealing PII or unauthorized legal advice.
+9.  Design the application builder and its outputs to be transparent and explainable, making LLM processes and decisions understandable and verifiable by users and stakeholders.
+10. Ensure all extracted logic or generated content from the application builder is verifiable and traceable to its original source.
+11. Implement mechanisms for output validation and verification against source texts, and double-check for omissions or errors, especially in compliance-critical applications.
+12. Program the application builder to flag uncertainty (e.g., low confidence, missing source) in LLM outputs for human review, particularly in highly regulated environments.
+13. Program robust system prompts or policies into the application builder to guide the model's behavior and limits (e.g., declining to provide confidential data or unauthorized guidance).
+14. Ensure the application builder's AI behavior and outputs align with legal, ethical, and organizational norms.
+15. Incorporate continuous compliance checks throughout the application builder's development lifecycle, from data collection to deployment.
+16. Identify and mitigate biases in AI systems used by the application builder through diverse training data, bias detection algorithms, and clear guidelines for fair treatment.
+17. For automated decision-making enabled by the application builder, ensure human input or review is required, aligning with principles like GDPR.
+18. Utilize LLMs within the application builder that have undergone instruction tuning and Reinforcement Learning from Human Feedback (RLHF) to follow instructions accurately and refuse inappropriate requests.
+19. Ensure the application builder's LLM usage abides by all emerging regulations related to data protection, auditability, and transparency.
+20. Implement auditable processes to track LLM decisions within the application builder, logging model version, prompt, response, and how the response was used.   
+21. Log prompts, responses, and decision rationale from the application builder to create comprehensive audit trails for compliance, debugging, and future reference.
+22. Employ data segmentation strategies, breaking down large documents into semantically meaningful chunks, to improve the application builder's LLM performance.  
+23. Establish and adhere to standardized procedures for developing, deploying, and maintaining the LLM-driven application builder.
+24. Implement continuous monitoring of the application builder's LLM system performance against regulatory and ethical standards, including regular audits and automated monitoring tools.
+25. Keep LLM models integrated into the application builder updated with the latest regulatory texts and rules, through fine-tuning or by updating the retrieval corpus immediately.
+26. Integrate systematic risk assessment techniques (e.g., FMEA, FTA), risk profiling, risk impact analysis, risk prioritization, and risk reporting into the application builder's development process.
+27. Enhance existing procurement policies to include AI-specific considerations for acquiring LLM tools and services for the application builder, evaluating vendors on data privacy, security, bias mitigation, and compliance.
+28. Require a clear business case for the adoption of LLM tools and services used in the application builder.
+29. Establish clear policies for copyrightable information produced by AI components within the application builder, ensuring AI-generated content does not infringe on existing IP rights.
+30. Consider minimizing computational resources and optimizing energy consumption of LLMs within the application builder to support sustainability efforts.        
+--------------------------------
+
+[3/23] 2.  Enable rapid application creation via LLM-builder.
+
+→ Fetching business rules for: '2. ...'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the business rules related to enabling rapid application creation via LLM capabilities:
+
+1.  LLMs shall convert natural language policies into pseudocode or functional code to bridge the gap between business and technical teams, accelerating application development.
+2.  LLMs shall analyze existing source code and configuration files to identify logic blocks and translate them into newer programming languages, enabling modernization and rapid re-creation of application components.
+3.  LLMs shall parse natural language documents (e.g., user guides, policies) to generate clean, structured business rules for direct integration into Business Rule Management Systems (BRMS), reducing manual effort in rule implementation for applications.
+4.  LLMs shall be employed to mine data from support logs and FAQs to create intelligent automation scripts or workflows, facilitating rapid development of specialized application functions (e.g., chatbots, ticket triaging systems).
+5.  LLMs shall augment extracted business rules with pseudo-code representations, demonstrating executable implementations and defining functions for structured operationalization within applications.
+6.  LLMs shall integrate with enterprise low-code automation environments to allow real-time extraction and application of logic across business processes, streamlining rapid application configuration and deployment.
+--------------------------------
+
+[4/23] 3.  Build initial Fund Manager Application using LLM-builder.
+
+→ Fetching business rules for: '3. ...'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules for building an initial Fund Manager Application using an LLM-builder:
+
+1.  Do not use LLMs for enforcing business rules.
+2.  Do not use LLMs for tasks that leave no room for inaccuracies.
+3.  Ensure customer data safety and compliance with all applicable GDPR rules.
+4.  Use separate accounts for development and production environments.
+5.  Always check LLM outcomes, as results are dependent on input and instructions.
+6.  Utilize a paid version of a generative AI provider for optimal performance and to avoid errors due to insufficient rights.
+7.  Manage LLM token limits by tracking conversation length and deleting older items to stay within model capacity.
+8.  Configure a generative AI provider for the application's branch or model to enable LLM process flow connectors.
+9.  Be aware that changing LLM models may break compatibility, particularly for embedding models if existing embeddings are in use.
+10. Encrypt key values of generative AI providers in the database when operating in a 3-tier environment.
+11. Design prompts and system interactions carefully (e.g., using structured, few-shot, or chain-of-thought prompting) to ensure quality and reliability of LLM output for compliance tasks.
+12. Implement tool use via agents when the LLM needs to interact with external databases, perform calculations, or access real-time information.
+13. Incorporate memory and conversation context management for interactive LLM applications to allow follow-up questions.
+14. Ensure LLM behavior and outputs align with legal, ethical, and organizational norms (Model Alignment).
+15. Program the system with robust system prompts or policies to guide LLM tone, limits, and refusal of unauthorized guidance.
+16. Apply content filtering to LLM outputs to prevent disallowed content, such as revealing Personally Identifiable Information (PII) or giving legal advice beyond its scope.
+17. Implement comprehensive logging and traceability for all LLM answers, including context and sources, to create an audit trail.
+18. Integrate human-in-the-loop review and approval by domain experts for extracted logic and LLM outputs.
+--------------------------------
+
+[5/23] 4.  Implement customer login for Fund Manager App.
+
+→ Fetching business rules for: '4. ...'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the business rules relevant to "4. Implement customer login for Fund Manager App.":
+
+1.  All customer login user interfaces must meet Section 508 accessibility requirements.
+2.  Customer passwords must be stored only as a salted cryptographic digest (hash) in the database.
+3.  Password hashing must be computed by a security function approved for applicability with Federal Information Processing Standards Publication (FIPS PUB) 140-2, following key derivation techniques specified in NIST SP 800-132.
+4.  A Password-Based Key Derivation Function (PBKDF) using the SHA-256 (or better) hashing algorithm and a randomly generated 128-bit salt is recommended for password storage.
+5.  An iteration count of at least 1,000 is recommended for password hashing.
+6.  Passwords, once hashed, must not be decrypted by the CMS system; they must be compared for equality in their encrypted form.
+7.  The application must implement robust authenticator management (related to CMS ARS Security Control IA-5).
+8.  The application must validate all information input, including login credentials (related to CMS ARS Security Control SI-10).
+9.  The application must be free of known vulnerabilities, including Cross-site scripting (XSS), SQL injection, and JavaScript injection.
+10. All custom-written software, including login functionality, must be scanned for vulnerabilities using CMS ISPG-approved scanning software.
+11. Static analysis tools must be used to detect security weaknesses and vulnerabilities in the code, including login functionality.
+12. System developers must test for weaknesses throughout the development process.
+13. Implement robust account management procedures (related to CMS ARS Security Control AC-2).
+14. Enforce access controls (related to CMS ARS Security Control AC-3) to ensure customers can only access their authorized information and functionalities.       
+15. Apply the principle of least privilege (related to CMS ARS Security Control AC-6) for customer access.
+16. The system must prevent unauthorized or fraudulent transactions.
+17. Account opening procedures must be strictly adhered to, including obtaining necessary client information, being satisfied that the client has the authority or approval to enter into an Investment Management Agreement (IMA), and ensuring a written IMA is executed.
+18. Protect the confidentiality and integrity of all sensitive customer information at rest, including login credentials and data accessible post-login, using encryption that meets or exceeds the FIPS 140-2 standard with an approved FIPS crypto module.
+19. Establish, implement, and maintain written policies and procedures to ensure the confidentiality of clients’ records and information.
+20. Clients’ information must not be disclosed to a third party or an unauthorized person, unless prior consent has been obtained or where there is a legal or regulatory requirement to disclose such information.
+21. Prevent any flow of price-sensitive information to unauthorized parties through the application.
+22. The application must enable full disclosure of clients’ accounting records and assets to the clients.
+23. The presentation and substance of key disclosures within the app must be clear, effective, and easily understood to enable clients to make informed investment decisions.
+24. Maintain proper records of client details and other relevant information, including supporting documents for investment policy and investment recommendation.  
+25. Retain adequate records of all transactions, dealings, accounting records, and login events for at least seven years.
+26. Establish internal controls to monitor login activities and other client actions to detect and prevent compliance violations.
+27. Implement event logging (related to CMS ARS Security Control AU-2) and define the content of audit records (related to AU-3) for login and related activities. 
+28. The login system and subsequent access must ensure client assets are safeguarded at all times and not improperly used.
+29. If the application allows withdrawal instructions from a client’s account, such assets must be delivered directly to that client and not to a third party, requiring appropriate verification of the logged-in user.
+30. The application must use CMS-Validated Mediation and Data Access Services to access data, rather than direct access to databases.
+--------------------------------
+
+[6/23] 5.  Capture customer details.
+
+→ Fetching business rules for: '5. ...'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Based on the provided content, the following business rules are related to the capture and handling of customer details:
+
+1.  Secure clear consent from individuals before gathering their data.
+2.  Grant individuals the authority to access and erase their data.
+3.  Embed suitable security precautions for data protection.
+--------------------------------
+
+[7/23] 6.  Capture customer risk profile.
+
+→ Fetching business rules for: '6. ...'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules related to "6. Capture customer risk profile":
+
+1.  Comply with Anti-Money Laundering (AML) and Know Your Customer (KYC) regulations for customer risk assessment, following a risk-based approach for regulated entities.
+2.  Follow a systematic process for customer risk profiling, including collecting and verifying customer information, profiling based on behavior and transaction patterns, identifying potential risks, and implementing mitigation measures.
+3.  Define what constitutes risk within the specific business context (e.g., financial stability, legal compliance, reputational risk) and classify risks into categories (e.g., financial, operational, strategic, compliance).
+4.  Gather comprehensive customer information from trustworthy and credible sources, including financial statements, credit reports, industry databases, and third-party data providers.
+5.  Conduct interviews with key personnel, where applicable, to understand customer operations, financial health, and risk management practices.
+6.  Assess customer risk profiles based on factors including:
+    *   Identity, age, country of origin, location, residency, occupation.
+    *   Nature of the business relationship, industry, beneficial ownership, company establishment date (for businesses).
+    *   Source of funds, intended use of funds, transaction values, types and volume of transactions, financial behaviors.
+    *   Types of products and services offered.
+    *   Operating jurisdictions and jurisdictions of customers.
+    *   Third parties dealt with.
+    *   Adverse media mentions or links to criminal activity.
+    *   Involvement in high-risk sectors (e.g., iGaming, arms trade, pharmaceuticals).
+    *   Duration of the customer relationship.
+7.  Verify customer identities and screen users against sanctions lists, watchlists, and blacklists to identify politically exposed persons (PEPs), sanctioned persons/businesses, or links to money laundering/terrorism financing.
+8.  Develop and implement a risk scoring model to quantify customer risk levels, assigning weightages to various factors based on their potential impact.
+9.  Categorize customers into defined risk levels (e.g., low, medium, high, banned) based on calculated risk scores and established thresholds.
+10. Perform ongoing customer monitoring, including real-time data integration, transaction monitoring, and periodic reviews, to detect unusual activities, identify emerging risks, verify data accuracy, and adapt to changes in customer behavior or market conditions.
+11. Set up automated alerts for key risk indicators (e.g., changes in employment status, adverse media reports, unusual transaction patterns).
+12. Leverage technology, including data analytics, machine learning algorithms, and AML compliance solutions, to streamline risk assessment, identify risk-indicative patterns, predict behavior, and detect anomalies.
+13. Keep detailed records of all risk assessments, including the rationale behind risk ratings, and transparently document risk profiling methodologies and algorithms.
+14. Provide regular reports to stakeholders on key risks and mitigation actions.
+15. Establish a clear escalation process for high-risk findings to ensure prompt addressing and mitigation.
+16. Train employees on conducting customer risk assessments effectively and foster a risk-aware culture.
+17. Integrate customer risk assessment processes with the broader risk management framework and align them with overall business strategy and objectives.
+18. Stay updated with industry best practices and integrate them into risk assessment processes.
+--------------------------------
+
+[8/23] 7.  Capture customer investment amount.
+
+→ Fetching business rules for: '7. ...'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Based on the provided content, there are no specific business rules related to "7. Capture customer investment amount." The text discusses the definition, types, and general examples of business rules, but does not offer any concrete rules for capturing customer investment amounts.
+--------------------------------
+
+[9/23] 8.  Maintain customer investment portfolios.
+
+→ Fetching business rules for: '8. ...'
+  ✗ Error fetching from web: 504 The request timed out. Please try again.
+
+--- Extracted Business Rules ---
+Error: 504 The request timed out. Please try again.
+--------------------------------
+
+[10/23] 9.  Update customer portfolios real-time.
+
+→ Fetching business rules for: '9. ...'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+The provided content does not contain specific business rules related to "9. Update customer portfolios real-time." The text discusses the general nature, benefits, and examples of business rules, but no rules pertaining to real-time customer portfolio updates could be extracted.
+--------------------------------
+
+[11/23] 10. Enable manager pooling of customer investments.
+
+→ Fetching business rules for: '10....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the business rules related to "10. Enable manager pooling of customer investments":
+
+1.  A national bank may serve as the investment manager or adviser for various types of pooled investment funds.
+2.  Types of pooled investment funds include collective investment funds, open-end management investment companies (mutual funds), unit investment trusts, closed-end investment companies, and unregistered investment funds (e.g., private equity limited partnerships and hedge funds).
+3.  Collective Investment Funds (CIFs) are bank-administered trust funds designed to combine the assets of individual fiduciary accounts into a single investment fund.
+4.  Each Collective Investment Fund (CIF) must operate with its own specific investment strategy.
+5.  A fiduciary portfolio manager may invest a separately managed account’s assets in pooled investment funds to help achieve its investment goals and objectives. 
+6.  Collective Investment Funds (CIFs) remain a vehicle for investing the assets of smaller fiduciary accounts.
+--------------------------------
+
+[12/23] 11. Provide algorithmic investment suggestions to managers.
+
+→ Fetching business rules for: '11....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules:
+
+1.  Pure investment decision algorithms that generate orders which are only to be executed by non-automated means and with human intervention are excluded from the testing requirements for trading algorithms.
+2.  Requirements regarding the authorization for deployment/updates, methodologies for design, performance, recordkeeping, approval, allocation of responsibilities, resource allocation, internal instruction procedures, and assurances on algorithmic behavior and compliance (as specified in Article 5, paragraphs 2-5) do not apply to trading algorithms that do not lead to order execution.
+--------------------------------
+
+[13/23] 12. Support Fixed Deposit investments.
+
+→ Fetching business rules for: '12....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules related to "12. Support Fixed Deposit investments":
+
+1.  Fixed Deposits (Term Deposits) can be offered to individuals (single or joint accounts), minors (with a natural guardian or mother as guardian, or independently if over 10 and can sign uniformly, subject to Government/RBI restrictions), Non-Resident Indians (NRIs), businesses, partnership firms, Private and Public Limited Companies, Hindu Undivided Families (HUFs), Specified Associates, Societies, and Trusts.
+2.  A minimum deposit amount of ₹1,000 is typically required for FDs, with no upper limit for standard FDs.
+3.  Tax-saving FDs are subject to an investment cap of ₹1.5 lakh per financial year.
+4.  Fixed Deposit tenures can range from 7 days to 10 years.
+5.  Interest rates for FDs must be fixed at the time of deposit.
+6.  Senior citizens typically receive higher interest rates on FDs (0.25% to 0.50% additional).
+7.  Banks must deduct Tax Deducted at Source (TDS) if FD interest exceeds ₹40,000 in a financial year (₹50,000 for senior citizens).
+8.  Tax-saving FDs must have a mandatory lock-in period of 5 years to qualify for Section 80C deductions.
+9.  Premature withdrawal of FDs may incur penalties, typically 0.5% to 1% of the applicable interest rate.
+10. Banks can offer loans up to 90% of the FD value against the deposit.
+11. Interest rates on loans against FDs must be 1% to 2% higher than the FD rate.
+12. It is mandatory for single FD account holders to provide nominee details.
+13. Banks must adhere to Reserve Bank of India (RBI) guidelines for FDs to ensure investor protection.
+14. Bank FDs are insured up to ₹5 lakh per depositor, covering both principal and interest.
+15. Investors must complete Know Your Customer (KYC) procedures for FDs by submitting proof of identity and address.
+16. Senior Citizen FDs can offer monthly or quarterly interest payout options.
+17. NRE (Non-Resident External) FDs must be fully repatriable and tax-free.
+18. Interest on NRO (Non-Resident Ordinary) FDs is taxable.
+19. FCNR (Foreign Currency Non-Resident) FDs must be maintained in foreign currency.
+20. Banks must formulate a transparent and comprehensive policy covering all aspects of deposit account operations (including FDs), charges, depositor rights, and secrecy/confidentiality.
+21. All staff members must be thoroughly acquainted with the bank's rules for various types of deposits (including FDs) and RBI directives, and keep abreast of amendments.
+22. Before opening any deposit account (including FDs), banks must carry out due diligence as required under KYC-AML-CFT guidelines issued by RBI.
+23. KYC status for deposit accounts must be updated periodically based on customer risk category.
+24. Banks must undertake due diligence as per Foreign Account Tax Compliance Act (FATCA)/Common Reporting Standard (CRS) rules notified by RBI/CBDT for deposit accounts.
+25. Account opening forms for deposits (including FDs) must be provided to prospective depositors, detailing required information and documents.
+26. Bank officials must explain procedural formalities and provide clarifications for opening deposit accounts.
+27. All forms/applications must allow transgender persons to decide their self-identified gender (male, female, or third gender).
+28. Due diligence for opening deposit accounts must include verifying identity, address, compiling a customer profile, and obtaining recent photographs.
+29. Information collected for opening deposit accounts must be kept confidential, not divulged for cross-selling, and information sought must be relevant to perceived risk and not intrusive. Adherence to the Foreign Contribution Regulation Act, 2010, is required.
+30. Banks must maintain records of prescribed transactions for deposit accounts under the Prevention of Money Laundering (PML) Act, 2002.
+31. Banks must furnish information of prescribed transactions for deposit accounts to the specified authority under the PML Act, 2002.
+32. Banks must verify and maintain updated records of client identity, account files, and business correspondence for deposit accounts under the PML Act, 2002.    
+33. Records of prescribed transactions and furnished information must be preserved for at least five years from the date of each transaction under the PML Act, 2002.
+34. Records of client identity, account files, and business correspondence must be preserved for at least five years after the business relationship ends or the account closes, whichever is later, under the PML Act, 2002.
+--------------------------------
+
+[14/23] 13. Support Stock investments.
+
+→ Fetching business rules for: '13....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the business rules related to "Support Stock investments":
+
+1.  Institutional investment managers exercising investment discretion over $100 million or more in Section 13(f) securities must file Form 13F.
+2.  An institutional investment manager is defined as an entity that invests in, or buys and sells, securities for its own account (e.g., banks, insurance companies, broker/dealers, corporations, pension funds managing their own portfolios), or a natural person or entity that exercises investment discretion over the account of any other natural person or entity (e.g., investment advisers, bank trust departments).
+3.  The Form 13F filing obligation applies regardless of whether the manager is an SEC-registered investment adviser, provided it meets the Section 13(f) requirements.
+4.  Investment discretion includes the power to determine which securities are bought or sold for an account, or making such decisions even if another party is responsible for the investment decisions; it also encompasses discretion over all accounts managed by any natural person, company, or government instrumentality under the manager's control.
+5.  Section 13(f) securities primarily include U.S. exchange-traded stocks, shares of closed-end investment companies, and exchange-traded funds (ETFs); only securities on the Official List of Section 13(f) Securities should be reported.
+6.  Form 13F filings must include the issuer name (listed alphabetically), a description of the class of security, the number of shares owned, and the fair market value of the securities as of the end of the calendar quarter.
+7.  Reporting on Form 13F must be based on the trade date.
+8.  Institutional investment managers reporting holdings for other managers with whom they share investment discretion, and who also meet the $100 million filing threshold, must identify such other managers on the "List of Other Included Managers."
+9.  Aggregation of positions by issuer is permitted for securities of the same class if the manager has sole investment discretion or shares investment discretion with an entity that does not have an independent obligation to file.
+10. Managers may omit certain small positions from Form 13F if they hold fewer than 10,000 shares of a given issuer AND the aggregate fair market value of their holdings in that same issuer is less than $200,000; both requirements must be met.
+11. An institutional investment manager's Form 13F filing obligation is re-evaluated at the end of each calendar year; if the manager falls below the $100 million filing threshold on the last trading day of every month of a calendar year, it is no longer obligated to file Form 13F for the subsequent year.
+12. Investors who beneficially own more than five percent of any US public company’s SEC-registered voting stock must make Schedule 13D or 13G filings.
+13. Insiders (officers, directors, and beneficial owners of more than 10% of the registered voting stock of any US public company, other than a foreign private issuer) must file Forms 3, 4, and 5 disclosing their beneficial ownership of and transactions in the company’s equity securities.
+14. Large traders must identify their status to the SEC and their broker-dealers via Form 13H with the following deadlines:
+    *   **Initial Filing:** Promptly, generally within 10 days after reaching the identifying activity level.
+    *   **Annual Filing:** Within 45 days after the end of every calendar year after the initial filing.
+    *   **Amended Quarterly Filing:** Promptly after the end of the calendar quarter in which any information in the last filing became inaccurate.
+    *   **Reactivated Status Filing:** Promptly, generally within 10 days after reaching the identifying activity level again.
+15. Public companies and investors must ensure internal controls are sufficiently robust and properly functioning to identify filing triggers and manage beneficial ownership reporting requirements.
+16. Legal and/or compliance teams responsible for Section 13 and Section 16 filings must be educated on the requirements and new deadlines.
+17. Investment advisers registered with the Commission must adopt and implement written policies and procedures reasonably designed to prevent violations of the federal securities laws by the adviser or any of its supervised persons.
+18. Investment adviser compliance policies and procedures must address: portfolio management processes (including allocation of investment opportunities, consistency with client objectives, and regulatory restrictions), trading practices (including best execution, soft dollar arrangements, and allocation of aggregated trades), proprietary trading of the adviser and personal trading activities of supervised persons, and processes to value client holdings and assess fees based on those valuations.
+19. Investment advisers must review their compliance policies and procedures annually for their adequacy and the effectiveness of their implementation, and designate a chief compliance officer responsible for administering them.
+20. Investment companies must adopt and implement written policies and procedures reasonably designed to prevent the fund from violating the federal securities laws, including provisions for the fund to oversee compliance by its advisers, principal underwriters, administrators, and transfer agents.
+21. A fund’s board, including a majority of its independent directors, must approve the policies and procedures of the fund and each of its service providers, based on a finding that they are reasonably designed to prevent violations of the federal securities laws.
+22. Funds must adopt policies and procedures for pricing portfolio securities and fund shares, which must include: monitoring for circumstances that may necessitate the use of fair value prices; establishing criteria for determining when market quotations are no longer reliable; providing a methodology or methodologies for determining the current fair value; and regularly reviewing the appropriateness and accuracy of the method used in valuing securities, making any necessary adjustments.
+23. Investment advisers must consider client investment objectives and guidelines at each investment activity (i.e., buying, selling, liquidating).
+24. Policies for separate account clients must provide for periodic review and update of the client’s investment objectives and restrictions as specified in their investment advisory agreement.
+25. Policies for hedge fund clients must ensure adherence to investment objectives and restrictions discussed in the private placement memoranda and limited partnership/operating agreements.
+26. Policies for mutual fund clients must ensure adherence to investment objectives and restrictions discussed in the funds’ prospectuses and statements of additional information.
+27. Investment advisers must review and update their Form ADV annually for renewal.
+28. Investment advisers must review and update marketing materials as required every time they are provided to potential clients or used for advertising.
+29. Clients’ applications should specify for them to vote their own securities.
+30. If an investment adviser has the authority to determine, without obtaining specific client consent, the securities to be bought or sold and the amounts, clients must sign Trading Authorizations (Limited Power of Attorneys).
+31. Investment advisers and their related persons generally do not have the authority to determine the broker or dealer to be used or the commission rates paid, unless the client has specifically requested a more expensive brokerage agreement.
+32. Investment firms may require prior written approval for personal securities transactions by supervised persons, establish minimum hold periods, and require disclosure of securities holdings and transactions.
+33. Short-term trading by investment personnel is restricted and must be pre-approved by the Compliance Officer; any profits realized on prohibited short-term trades must be disgorged.
+34. Supervised persons are prohibited from knowingly selling to or purchasing from a client any security or other property, except for securities issued by the client.
+35. Supervised persons must not give or accept cash gifts or cash equivalents to or from a client, prospective client, or any entity that does business with or on behalf of the adviser.
+36. Supervised persons must not provide or accept extravagant or excessive entertainment; business entertainment of reasonable value is permitted if the person or entity providing the entertainment is present.
+37. Supervised persons must not give or accept gifts or entertainment with a value above $200 from a client, prospective client, or any person or entity who wishes to do business with or on behalf of the adviser, and must not solicit gifts of any value.
+38. Investment advisers and supervised persons must keep all client information (including identity, financial circumstances, security holdings, and advice furnished) in strict confidence.
+39. Broker-dealers must promptly obtain and maintain the physical possession or control of all fully-paid securities and excess margin securities carried for the account of customers.
+40. When borrowing fully-paid or excess margin securities from any person, a broker-dealer and the lender must enter into a written agreement that, at a minimum:  
+    a. Sets forth the basis of compensation for any loan and generally the rights and liabilities of the parties as to the borrowed securities.
+    b. Provides that the lender will be given a schedule of the securities actually borrowed at the time of the borrowing.
+    c. Specifies that the broker-dealer must provide to the lender, upon execution of the agreement or by the close of the business day of the loan, collateral (consisting exclusively of cash, United States Treasury bills and Treasury notes, an irrevocable letter of credit, or other Commission-designated collateral) that fully secures the loan.
+    d. Requires the loan to be marked to the market not less than daily; if the market value of all outstanding securities loaned exceeds 100% of the collateral held by the lender at the close of trading, the borrowing broker-dealer must provide additional collateral by the close of the next business day to equal not less than 100% of the market value of the securities loaned.
+41. Acceptable collateral for borrowing customer fully-paid and excess margin securities includes, in addition to cash, U.S. Treasury bills/notes, or irrevocable letters of credit, certain government securities, specific government-sponsored enterprise securities (e.g., FHLMC, FNMA), multilateral development bank securities, mortgage-backed securities, negotiable certificates of deposit, bankers acceptances, and foreign sovereign debt securities.
+--------------------------------
+
+[15/23] 14. Support Mutual Fund investments.
+
+→ Fetching business rules for: '14....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules for "14. Support Mutual Fund investments":
+
+1.  Firms must ensure that mutual fund communications with the public are fair, balanced, based on principles of fair dealing and good faith, and provide a sound basis to evaluate the facts.
+2.  Broker-dealers must not omit any material fact or qualification that would cause communications to be misleading.
+3.  Broker-dealers must not make any false, exaggerated, unwarranted, promissory, or misleading statements or claims in public communications.
+4.  Retail communications concerning mutual funds must generally be filed with FINRA within 10 business days of first use, unless an exception applies.
+5.  An appropriately registered principal of a firm must approve each retail communication before its use or filing with FINRA.
+6.  Firms must establish and maintain written procedures for the supervision and review of correspondence and institutional communications.
+7.  Firms must maintain files containing their communications with the public.
+8.  Firms are prohibited from selling mutual funds if their sales charges are deemed "excessive."
+9.  Firms must adhere to limits on front-end and deferred sales charges, ongoing asset-based sales charges, and service fees (e.g., Rule 12b-1 fees).
+10. Firms are prohibited from selling mutual fund shares in amounts below a breakpoint to share in higher sales charges.
+11. Firms must establish and maintain systems and controls to ensure customers receive all due breakpoint discounts.
+12. Firms' procedures for mutual fund sales must include training for staff involved in the sale of Class A shares.
+13. Firms should provide investors with a Written Disclosure Statement explaining the availability of breakpoint discounts.
+14. Member compensation deducted from the initial investment or fund assets (e.g., sales charges, Rule 12b-1 fees) must be disclosed in the mutual fund prospectus fee table.
+15. Other forms of member compensation, such as "shelf space" payments, must also be disclosed.
+16. Firms and their associated persons are broadly prohibited from paying or receiving non-cash compensation in connection with the sale of investment company securities, unless structured according to limited exceptions.
+17. Firms must maintain records regarding cash and non-cash compensation.
+18. Firms are prohibited from accepting cash compensation unless the compensation arrangement is disclosed in the prospectus.
+19. Compensation arrangements must not undermine a firm’s obligation to properly supervise its registered representatives or a registered representative's obligation to make suitable recommendations.
+20. Members must adopt and implement procedures designed to ensure all communications by registered representatives concerning investment company products are fair and balanced.
+21. Registered representatives must disclose all material information when recommending an investment company, including expenses, sales charges, investment objectives, and risks.
+22. Firms must ensure communications with the public regarding alternative funds present a fair and balanced picture of both risks and benefits and do not omit material facts or qualifications.
+23. Mutual funds are limited to a maximum amount of illiquid investments (generally not more than 15% of net assets, or 10% for money market funds).
+24. Funds must develop a liquidity risk management program that manages, measures, and regularly evaluates liquidity risk.
+25. Advisers must regularly report and monitor the liquidity classifications of every investment within the portfolio.
+26. Every mutual fund must pass qualifying tests set by the Internal Revenue Service (IRS), including quarter-end diversification limits and deriving the majority of gross income from investment-related activities.
+27. A mutual fund must distribute to shareholders the majority of its investment company taxable income.
+28. Firms must create a compliance program, including appointing a Chief Compliance Officer (CCO), conducting risk assessments, developing policies and procedures, creating disclosures and reports, conducting annual reviews, and maintaining records.
+29. Compliance policies and procedures must encompass areas relevant to the fund, such as portfolio management, business continuity plans, marketing advisory services, and trading practices.
+30. Each fund must designate a Chief Compliance Officer (CCO) to administer its compliance program.
+31. The CCO must be knowledgeable of applicable federal securities laws and hold a position of authority and seniority.
+32. The CCO must provide a written report to the fund board annually regarding the operation of the compliance program.
+33. Fund boards are required to review the adequacy and effectiveness of the fund’s compliance program and those of its service providers annually.
+34. Funds must maintain copies of every compliance program in effect, CCO annual reports, and board materials related to program approval for a specified number of years.
+35. Mutual fund shares must be priced and redeemable daily at their current net asset value per share.
+36. Redemption payments must be made within seven days, with suspension allowed only in limited circumstances.
+37. Mutual fund offering materials must be supplemented or amended at least annually and more frequently if necessary to keep disclosures current and accurate.    
+38. Mutual funds are limited in their use of leverage and may only borrow from banks, subject to a 300% asset coverage requirement.
+39. If a mutual fund pays performance-based compensation to its investment adviser (other than a fulcrum fee), an investor qualification requirement applies, generally limiting investors to persons with a net worth over $2 million.
+40. Mutual funds must declare themselves as diversified or nondiversified and adhere to associated investment limits.
+41. A diversified fund must invest more than 75% of its total assets in cash, government securities, securities of other registered investment companies, and other securities limited to 5% of total assets per issuer and 10% of outstanding voting securities per issuer.
+42. Mutual funds must have a policy on concentration of investments within any industry group.
+43. If a mutual fund intends to invest more than 25% of its assets in a single industry, it must disclose that policy and concentrate its investment in that industry.
+44. A mutual fund that does not declare a policy of concentrating its investments may not invest more than 25% of the value of its assets in securities of issuers engaged in any one industry.
+45. Mutual fund investments in other registered investment companies are limited: generally, a fund may not purchase more than 3% of the voting stock of another investment company, or purchase securities from another RIC representing more than 5% of its total assets, or purchase securities from RICs that in aggregate represent more than 10% of its total assets (subject to exceptions).
+46. Mutual funds may not purchase securities of an issuer that is a broker-dealer, underwriter, or registered investment adviser, except in accordance with certain limitations (e.g., not owning more than 5% of outstanding equity, 10% of debt, and not investing more than 5% of assets in that issuer).
+47. A mutual fund may not purchase more than 10% of the outstanding voting stock of an insurance company unless certain conditions are met.
+48. A majority of the members of a mutual fund board must be independent directors.
+49. A mutual fund's investment advisory agreement and agreement with any principal underwriter must be approved by the fund's board and by a majority of the fund's independent directors. Advisory agreements also require approval by a majority of the fund's outstanding voting securities.
+50. Advisory agreements and principal underwriting agreements may only have initial terms of up to two years and must be approved annually thereafter by a majority of the independent directors.
+51. Advisory agreements may be terminated by a mutual fund board (including independent directors) on not less than 60 days’ notice without penalty.
+52. Mutual funds must implement anti-money laundering programs, including customer identification procedures (USA Patriot Act).
+53. Mutual funds must adopt a consumer privacy policy and provide notice of the policy to investors (Gramm-Leach-Bliley Act).
+54. Mutual funds must maintain fidelity bonds providing coverage in specified amounts to protect against larceny and embezzlement.
+55. Mutual funds must establish valuation methodologies for particular types of securities and describe how the fund will review and test fair valuations.
+56. At least 85% of a mutual fund’s portfolio must be invested in "liquid securities" (disposable within seven days at a price approximating market value).        
+57. Section 17 of the Investment Company Act prohibits certain transactions between a fund and an affiliate acting for its own account, or joint transactions, unless permitted by SEC rules or exemptive orders with protective conditions.
+58. Mutual funds must maintain strict custody of fund assets, separate from the assets of the fund manager, typically using a bank custodian.
+59. Collateral posted by a mutual fund must be placed with an eligible custodian and maintained as required under the Investment Company Act.
+60. Fund boards, including a majority of independent directors, must approve the appointment, compensation, and removal of the fund CCO.
+--------------------------------
+
+[16/23] 15. Automate Return on Investment (ROI) analysis.
+
+→ Fetching business rules for: '15....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the business rules related to automating Return on Investment (ROI) analysis:
+
+1.  **Process Selection for Automation to Achieve ROI:**
+    *   Prioritize processes that execute with high frequency (daily or multiple times daily) to maximize potential time savings.
+    *   Select processes with clear, standardized, and documented rules to facilitate automation.
+    *   Target processes that currently incur high labor costs due to manual execution by expensive personnel or during premium time.
+    *   Choose processes with a high manual error rate to leverage significant error reduction value from automation.
+    *   Focus on processes with clear, quantifiable, and measurable outputs for accurate ROI analysis.
+    *   Utilize a Quick-Win Selection Framework by documenting repetitive processes, measuring their frequency and current time investment, identifying explicit business rules, and assessing data quality and system accessibility.
+    *   Score processes on frequency, time investment, labor cost, error risk, and standardization to determine an Automation Priority Score.
+    *   Rate high-scoring processes on data accessibility, system integration, rule complexity, exception frequency, and stakeholder complexity for an Implementation Complexity Assessment.
+    *   Select processes for automation with an Automation Priority Score greater than 7.0 and an Implementation Complexity Score less than 4.0 for optimal rapid ROI.
+    *   Choose processes with an estimated implementation time of less than 14 days to ensure quick ROI realization.
+    *   Consider initial automation of high-impact, high-frequency tasks such as email management, data entry, or invoice processing for a higher probability of 30-day ROI.
+
+2.  **Automation Implementation for ROI Achievement and Analysis:**
+    *   Ensure active stakeholder and end-user involvement from the project's inception.
+    *   Ensure data is clean, organized, and accessible before automation implementation.
+    *   Define clear, specific, and measurable success metrics for automation projects prior to implementation.
+    *   Favor user-friendly, no-code platforms for automation to facilitate ease of use and rapid deployment.
+    *   Implement automation through gradual, phased rollouts and pilot testing.
+    *   Set up the automation platform and basic integrations in the initial phase of implementation.
+    *   Create a dedicated test environment with sample data for thorough automation testing.
+    *   Train primary users on the automation platform basics.
+    *   Develop automation workflows, leveraging templates and pre-built options where available.
+    *   Test workflows with real data in a controlled environment and refine based on test results and user feedback.
+    *   Prepare comprehensive documentation and user guides for the automated system.
+    *   Go live with a pilot user group, monitor performance daily, and make adjustments as needed.
+    *   Analyze performance data to continuously optimize workflows.
+    *   Expand automation to additional users only after successful piloting.
+    *   Document lessons learned and best practices throughout the implementation process.
+
+3.  **Automated ROI Analysis and Measurement:**
+    *   Establish success metrics and a robust measurement system at the foundation of the project.
+    *   Begin measuring ROI metrics during the pilot phase of automation.
+    *   Automate the calculation of Weekly Time Saved using the formula: (Process Time × Frequency) - (Automation Setup Time ÷ 52).
+    *   Automate the calculation of Monthly Time Value using the formula: Weekly Time Saved × 4.33 × (Hourly Rate + 35% overhead).
+    *   Automate the calculation of Monthly Error Value using the formula: (Current Error Rate - Automated Error Rate) × Process Frequency × Average Error Cost.   
+    *   Automate the calculation of Capacity Increase Value using the formula: Additional Output Enabled × Unit Value.
+    *   Automate the calculation of Monthly Implementation Cost using the formula: (Platform Cost + Setup Time Cost + Training Cost) ÷ 12.
+    *   Automate the calculation of 30-Day ROI using the formula: ((Monthly Value × 1) - Monthly Implementation Cost) ÷ Monthly Implementation Cost × 100.
+    *   Calculate and report 30-day ROI results upon completion of the initial implementation phase.
+    *   Continuously measure ROI to build a strong business case for expanded automation initiatives.
+    *   Employ formula-based rules within automated systems for precise and deterministic ROI calculations.
+    *   Utilize derivation rules to generate new values based on existing data for ROI components.
+    *   Incorporate validation rules to ensure data quality and integrity for ROI calculations.
+
+4.  **Mitigating Risks in Automation for ROI:**
+    *   Verify all system integrations thoroughly during platform evaluation to prevent delays and cost overruns.
+    *   Avoid initial designs that are overly complicated; start simply and add complexity gradually to ensure manageable implementation.
+    *   Do not neglect change management; invest adequately in communication, training, and support for users.
+    *   Set realistic timelines for achieving ROI, avoiding expectations of complex automations delivering 30-day ROI.
+    *   Match the automation platform's complexity to actual requirements, favoring ease of use for quick wins.
+--------------------------------
+
+[17/23] 16. Integrate web-based Fixed Deposit interest rate retrieval.
+
+→ Fetching business rules for: '16....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+1.  Interest rates payable on deposits must be strictly as per a schedule of interest rates disclosed in advance.
+2.  Banks must maintain the bulk deposit interest rate card in their Core Banking System to facilitate supervisory review.
+3.  The interest rates offered shall be reasonable, consistent, transparent and available for supervisory review/scrutiny as and when required.
+4.  Interest rates on deposits must be uniform across all branches and for all customers for deposits of similar amount accepted on the same date at any of its offices.
+5.  Interest rates on deposits must not be subject to negotiation between the depositors and the bank.
+6.  Interest rates on term deposits may vary only due to tenor, size (for bulk deposits), or the non-availability of a premature withdrawal option.
+7.  Floating rate domestic term deposits must be linked to a directly observable and transparent market-determined external benchmark.
+--------------------------------
+
+[18/23] 17. Integrate web-based Stock price retrieval.
+
+→ Fetching business rules for: '17....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules related to "17. Integrate web-based Stock price retrieval":
+
+1.  Communications that include data from web-based stock price retrieval must not predict or project performance, imply that past performance will recur, or make any exaggerated or unwarranted claim, opinion, or forecast.
+2.  Any member's website that integrates web-based stock price retrieval (e.g., for display) must include a readily apparent reference and hyperlink to BrokerCheck.
+--------------------------------
+
+[19/23] 18. Integrate web-based Mutual Fund NAV retrieval.
+
+→ Fetching business rules for: '18....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules related to "18. Integrate web-based Mutual Fund NAV retrieval":
+
+1.  Funds must make detailed information, including portfolio holdings, available online.
+2.  Shareholder reports must include cover page legends directing investors to specified websites for additional information.
+3.  Online information must meet accessibility requirements, enabling investors to easily reach and navigate the data.
+4.  Funds are required to tag information in their shareholder reports using Inline XBRL structured data language to provide machine-readable data.
+5.  Funds must file monthly portfolio holdings reports (Form N-PORT) with the Commission within 30 days of month-end.
+6.  Monthly Form N-PORT reports, including portfolio holdings, will be made publicly available with a 60-day delay.
+7.  Funds must establish, consistently apply, and periodically review appropriate methodologies for determining the fair value of fund investments.
+8.  Funds must test the appropriateness and accuracy of their fair value methodologies.
+9.  Funds must oversee pricing service providers used for fair value determinations, including approval, monitoring, evaluation, and initiating price challenges.  
+10. The fund's valuation designee must promptly notify the fund board (within five business days) of material matters affecting fair value, including material errors in the calculation of net asset value.
+11. Fund complexes must incorporate business continuity planning to mitigate operational risks related to significant business disruptions, including those affecting NAV calculation, especially when relying on third-party service providers.
+12. Funds must conduct thorough initial and ongoing due diligence of critical third-party service providers (e.g., pricing agents), including reviewing their business continuity and disaster recovery plans.
+13. Funds should leverage technology for compliance efficiencies, including automated software for real-time transaction monitoring, data analysis, digital record-keeping, and streamlined reporting.
+--------------------------------
+
+[20/23] 19. Design Fund Manager App to target 10% customer returns.
+
+→ Fetching business rules for: '19....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules for designing a Fund Manager App, extracted from the provided content:
+
+1.  All Artificial Intelligence (AI) systems used in the Fund Manager App's financial products and services must be subject to robust governance and oversight structures.
+2.  Rigorous processes for the development, testing, and ongoing monitoring of all algorithms utilized within the Fund Manager App must be established and followed.
+3.  High data quality must be ensured, and potential biases in data used by the Fund Manager App's AI systems must be actively managed.
+4.  The Fund Manager App's AI systems must be designed to ensure adequate transparency and explainability of their decision-making processes for stakeholders.     
+5.  Robust risk management frameworks must be implemented for all outsourcing arrangements and third-party dependencies related to the Fund Manager App's AI systems.
+6.  Ethical concerns associated with the use of AI in the Fund Manager App's financial products and services must be addressed.
+7.  The Fund Manager App must be designed and operated in a manner that protects investors, maintains market integrity, and contributes to financial stability.    
+8.  Measures to mitigate risks arising from malicious uses of AI within the Fund Manager App must be implemented.
+9.  Effective interactions between human operators and the Fund Manager App's AI systems must be managed to mitigate associated risks.
+10. The Fund Manager App must comply with existing regulatory frameworks and remain adaptable to evolving regulations concerning AI in financial services.
+11. The Fund Manager App must incorporate or support measures to enhance Anti-Money Laundering (AML) and Counter-Terrorist Financing (CFT) compliance.
+12. Performance targets, such as "10% customer returns," must be defined with exact, measurable criteria rather than vague expressions to allow for clear evaluation and reporting.
+--------------------------------
+
+[21/23] 20. Market application-builder as "magic fintech app-builder".
+
+→ Fetching business rules for: '20....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules related to "20. Market application-builder as "magic fintech app-builder"":
+
+1.  Fintech applications must implement real-time capabilities to verify users, control data access, and report suspicious activity.
+2.  Onboarding, credit checks, user consent, and dispute handling features within the application must adhere to strict regulatory rules from the initial design.  
+3.  The application's data structure, user flows, and risk exposure handling must be designed in compliance with regulations.
+4.  All new integrations within the application must comply with data privacy rules, transaction monitoring standards, and complex reporting duties.
+5.  The application's software logic must enforce limits, log every action, and adapt to regional requirements, featuring clear audit trails, flexible rules, and country-specific settings.
+6.  Compliance controls must be integrated into the application's architecture from the design phase.
+7.  The application must implement strict Know Your Customer (KYC) procedures, including identity verification, documentation, and screening against global lists during user onboarding.
+8.  The application must continuously monitor users after onboarding to detect erratic behavior, large transfers, or abnormal transaction patterns.
+9.  The application's Anti-Money Laundering (AML) rules must be adaptive, adjusting based on user behavior, transaction type, and jurisdiction.
+10. The application must ensure encrypted storage, secure access, and swift response capabilities for highly sensitive records, complying with regional data privacy frameworks (e.g., CCPA, GDPR).
+11. Data managed by the application must remain within approved jurisdictions, access must follow strict role-based permissions, and each access point must have a documented policy trail.
+12. The application must implement real-time detection for fraud, abuse, and system errors, flagging anomalies, acting on alerts, and filing required reports without delay.
+13. The application's systems must meet established industry standards (e.g., PCI DSS) and address local expectations for financial crimes and cross-border transfers.
+14. All flagged events within the application must have documented actions.
+15. The application must ensure transparent pricing and provide explainable and testable logic for credit decisions.
+16. The application must ensure complaint handling follows a structured protocol aligned with local mandates.
+17. If using advanced scoring or AI, the application must maintain records of every decision made by these systems.
+18. The application should be designed to support continuous monitoring of regulatory changes, testing of internal controls, and agile code updates.
+19. The application must provide full audit logs, clear data protection policies, and robust Anti-Money Laundering (AML) controls.
+20. All aspects of the financial product facilitated by the application, including marketing content, onboarding, and account closures, must be compliant.
+21. The application must ensure marketing materials clearly and upfront communicate all financial product terms (e.g., fees, interest, payment requirements).      
+22. User onboarding processes must include sanctions screenings.
+23. If the application handles delinquent credit accounts, it must comply with debt collection requirements regarding communication frequency and timing.
+24. The application must comply with OFAC sanctions by screening against sanctioned entities and individuals.
+25. If partnering with a Banking-as-a-Service (BaaS) provider, all customer-facing assets and user interfaces within the application must undergo the provider’s approval process, and user complaints must be reported to the provider.
+26. The application must safeguard financial privacy and implement data security measures for customer information, adhering to regulations like the Gramm-Leach-Bliley Act (GLBA).
+27. The application must comply with regulations (e.g., Fair Credit Reporting Act (FCRA)) governing the collection, dissemination, and use of consumer credit information, particularly for credit scoring, reporting, and lending.
+28. The application must comply with regulations (e.g., Fair Debt Collection Practices Act (FDCPA)) regulating debt collection activities to limit harassment and unfair practices.
+29. If the application facilitates money transmission, it must acquire and adhere to relevant state-specific money transmitter licenses.
+30. If the application offers investment products, crowdfunding, investment advice, or trading platforms, it must comply with securities registration, disclosure, and trading activity regulations (e.g., Securities Act of 1933, Securities Exchange Act of 1934).
+31. The application's underlying technology systems must ensure stability and operational resilience.
+32. For operations in the EU, the application must implement strong customer authentication for financial transactions and enable third-party providers to access payment account data with user consent (per PSD2).
+33. For electronic fund transfers in the US, the application must disclose information to users regarding liabilities for unauthorized transactions and error resolution procedures (per EFTA).
+--------------------------------
+
+[22/23] 21. Offer application-builder as a service.
+
+→ Fetching business rules for: '21....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules for offering an application-builder as a service:
+
+1.  The service must provide a framework that enables users to define and maintain business rules.
+2.  The framework must allow users to execute various actions based on their defined business rules.
+3.  The service must deliver system-defined resources, business objects, and predefined events.
+4.  The service must enable users to define custom rules, conditions, and actions using the system-defined events and data.
+5.  The service must provide a user interface for managing business rules, including viewing, adding, and modifying them.
+6.  The service must include predefined default rules for system events.
+7.  The service must allow users to copy default rules for modification.
+8.  The service must prevent direct modification of existing default rules.
+9.  The service must allow users to add new, user-defined business rules.
+10. User-defined rules must include a unique name, a description, an enabled/disabled status, at least one condition, and at least one action.
+11. User-defined rule names must be immutable after saving.
+12. The service must support up to 10 conditions per rule.
+13. The service must support grouping and joining of conditions to define an order of operations.
+14. The service must support up to three levels of nested conditions within rule definitions.
+15. Conditions must be definable using a field, an operator, and a comparison value.
+16. The service must present operators relevant to the selected field's data type.
+17. The service must validate condition sequences to ensure no gaps (e.g., 1, 2, 3, 4).
+18. The service must provide "Send Communication" as an action type.
+19. "Send Communication" actions require pre-configured communication templates.
+20. "Send Communication" actions must allow selection of recipient scope (e.g., specific templates, channel types, or all templates).
+21. The service must provide "Add Fee" as an action type for applicable business objects.
+22. "Add Fee" actions must allow appending fee items to transactions based on business object attributes.
+23. Conditions for "Add Fee" actions must reference relevant business object attributes.
+24. "Add Fee" actions require configuration of Fee Item, Amount, Status, Department, and Memo.
+--------------------------------
+
+[23/23] 22. Design application-builder to support higher future return targets.
+
+→ Fetching business rules for: '22....'
+  ✓ Extracted business rules successfully.
+
+--- Extracted Business Rules ---
+Here are the relevant business rules for designing an application-builder to support higher future return targets:
+
+1.  Application-builders should enable viewing applications from a business rule perspective, independent of technical languages and platforms, to facilitate long-term understanding and reuse.
+2.  Application-builders must support the capture of frequently changing policies and rules, allowing for quick and efficient implementation of changes within business applications.
+3.  The design of application-builders should support managing and writing rules in a business-friendly language, empowering business users to update software according to their own schedules.
+4.  Application-builders should integrate interactive tools that encourage code reuse and improve application consistency by providing access to business rules.   
+5.  Application-builders must facilitate the externalization of all configuration settings (e.g., network connections, ports, DNS names) from application code to allow changes without rebuilding, enable testing in different configurations without modification, support deployment in varied environments, and ensure horizontal scalability.
+6.  Application-builders should enforce the inclusion of inline documentation for public APIs in custom-written software, with a capability to generate human-readable documentation for developers and maintainers, to ensure trustworthy and accurate operational assumptions.
+7.  Application-builders should support the versioning of engineering documentation (design documents, diagrams) along with source code in the same repository, stored in modifiable form, to maintain consistency and facilitate continuous maintenance.
+8.  Application-builders should enable the translation of extracted business rules into a business language suitable for business requirement documents.
+9.  Application-builders must support the storage and classification of business rules in a rule repository according to applications, functionality, and use cases, to improve reusability and management.
+10. Application-builders should offer rich features for rule extraction, such as static program navigation, various program structure views, and the ability to expand and browse dependent programs.
+11. The design of application-builders should prioritize tools that improve efficiency in application discovery, business rule extraction, debugging, and testing. 
+12. Applications built using the builder must demonstrate enhanced efficiency, better consistency, reduced complexity, increased process control, stronger strategies, and improved processes through the effective application of business rules.
+13. Application-builders should allow for the creation and flexible application of specific business rules for individual business units and distinct projects.    
+14. Application-builders should provide capabilities to integrate business rules for personalizing user experiences (e.g., website personalization based on customer characteristics).
+15. Application-builders should facilitate the implementation of business rules for setting and managing approval procedures (e.g., application approvals based on criteria).
+16. Application-builders should support the integration of business rules for managing subscription services and customer retention.
+17. Application-builders should enable the application of business rules in critical operational areas such as purchase orders and returns.
+18. Application-builders must be designed to facilitate agility and rapid adaptation to changes in underlying business rules.
+--------------------------------
+
+============================================================
+STEP 4: Storing Business Rules in ChromaDB
+============================================================
+✓ Stored 23 documents in ChromaDB
+
+============================================================
+TOP 5 BUSINESS RULES FOR QUERY:
+
+    ABC Customer SabseBadaRupaiya wants to build a Fund Manager Application for use by its talented money manager and esteemed customers. The Fund Manager Application will allow customer login, capture customer details, risk profile, investment amount. It will maintain each customer's current portfolio and update on real-time basis.
+The application will be used by the manager to pool customer investments, and aid the manager in decision-making (algorithmic suggestions) to invest in various options such as fixed deposits, stocks, and mutual funds, again on real-time basis. The application should analyze return on investment options automatically by checking the web e.g. FD interest rates across banks, stock prices and mutual funds NAVs.
+The goal is to build an LLM-driven application-builder that can "quickly" build this application for SabseBadaRupaiya, who insists that this application should attempt to deliver 10 percent returns for customers. Once done, ABC wants to market this as a magic fintech app-builder and sell-as-service to multiple customers, with possibly higher returns targeted.
+
+============================================================
+
+[1] Similarity: 0.1738
+Actionable Statement: 19. Design Fund Manager App to target 10% customer returns.
+Sources:
+  - [PDF] Artificial Intelligence in Capital Markets: Use Cases, Risks ... - IOSCO: https://www.iosco.org/library/pubdocs/pdf/IOSCOPD788.pdf
+  - Business Rules Extraction - Digital Transformation Skills: https://digitaltransformationskills.com/glossary/business-rules-extraction/
+
+Business Rules Preview:
+Actionable Statement: 19. Design Fund Manager App to target 10% customer returns.  Business Rules: Here are the relevant business rules for designing a Fund Manager App, extracted from the provided content:  1.  All Artificial Intelligence (AI) systems used in the Fund Manager App's financial products and services must be subject to robust governance and oversight structures. 2.  Rigorous processe...
+
+
+[2] Similarity: 0.520
+Actionable Statement: 20. Market application-builder as "magic fintech app-builder".
+Sources:
+  - Fintech Compliance Guide 2025: Rules, Risks & Regulations: https://relevant.software/blog/fintech-compliance/
+  - Overview of compliance fundamentals for fintechs in the US - Stripe: https://stripe.com/guides/overview-of-compliance-fundamentals-for-fintechs-in-us
+
+Business Rules Preview:
+Actionable Statement: 20. Market application-builder as "magic fintech app-builder".  Business Rules: Here are the relevant business rules related to "20. Market application-builder as "magic fintech app-builder"":  1.  Fintech applications must implement real-time capabilities to verify users, control data access, and report suspicious activity. 2.  Onboarding, credit checks, user consent, and di...
+
+
+[3] Similarity: 0.498
+Actionable Statement: 3.  Build initial Fund Manager Application using LLM-builder.
+Sources:
+  - LLMs for Business Logic Extraction: https://palospublishing.com/llms-for-business-logic-extraction/
+  - Regulatory Rule Mapping: https://www.finreg-e.com/compliance-services/rule-mappings/
+ance with all applicable GDPR r...
+
+
+[4] Similarity: 0.259
+Actionable Statement: 4.  Implement customer login for Fund Manager App.
+Sources:
+  - Business Rules and Recommended Practices - CMS: https://www.cms.gov/tra/Application_Development/AD_0060_Application_Business_Rules.htm
+  - GuidelinesFundManager_190514: https://www.scribd.com/document/500884720/GuidelinesFundManager-190514
+
+Business Rules Preview:
+Actionable Statement: 4.  Implement customer login for Fund Manager App.  Business Rules: Here are the business rules relevant to "4. Implement customer login for Fund Manager App.":  1.  All customer login user interfaces must meet Section 508 accessibility requirements. 2.  Customer passwords must be stored only as a salted cryptographic digest (hash) in the database. 3.  Password hashing must b...
+
+
+[5] Similarity: 0.115
+Actionable Statement: 18. Integrate web-based Mutual Fund NAV retrieval.
+Sources:
+  - [PDF] Final rule: Tailored Shareholder Reports for Mutual Funds ... - SEC.gov: https://www.sec.gov/files/rules/final/2022/33-11125.pdf
+  - IMGU 2016-04: https://www.sec.gov/investment/im-guidance-2016-04.pdf
+
+Business Rules Preview:
+Actionable Statement: 18. Integrate web-based Mutual Fund NAV retrieval.  Business Rules: Here are the relevant business rules related to "18. Integrate web-based Mutual Fund NAV retrieval":  1.  Funds must make detailed information, including portfolio holdings, available online. 2.  Shareholder reports must include cover page legends directing investors to specified websites for additional infor...
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1759697449.781450    5272 init.cc:229] grpc_wait_for_shutdown_with_timeout() timed out.

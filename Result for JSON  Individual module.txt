@@ -1,0 +1,136 @@
+Result for JSON : Individual module verification 
+
+=== Processing Story: US-001 ===
+
+[Checking AC] US-001 :: AC-001
+ ✅ SAT :: AC-001
+
+[Checking AC] US-001 :: AC-002
+ ✅ SAT :: AC-002
+
+[Checking AC] US-001 :: AC-003
+ ✅ SAT :: AC-003
+
+[Checking AC] US-001 :: AC-004
+ ✅ SAT :: AC-004
+
+[Checking AC] US-001 :: AC-005
+ ✅ SAT :: AC-005
+
+[Checking AC] US-001 :: AC-006
+ ✅ SAT :: AC-006
+
+[Checking Compounded AC] US-001
+ ✅ SAT :: Compounded AC
+
+[Checking Story-Level Consistency] US-001
+ ✅ SAT :: Story-Level
+
+
+=== Processing Story: US-002 ===
+
+[Checking AC] US-002 :: AC-007
+ ✅ SAT :: AC-007
+
+[Checking AC] US-002 :: AC-008
+ ✅ SAT :: AC-008
+
+[Checking AC] US-002 :: AC-009
+ ✅ SAT :: AC-009
+
+[Checking AC] US-002 :: AC-010
+ ✅ SAT :: AC-010
+
+[Checking AC] US-002 :: AC-011
+ ✅ SAT :: AC-011
+
+[Checking AC] US-002 :: AC-012
+ ✅ SAT :: AC-012
+
+[Checking AC] US-002 :: AC-013
+ ✅ SAT :: AC-013
+
+[Checking Compounded AC] US-002
+ ✅ SAT :: Compounded AC
+
+[Checking Story-Level Consistency] US-002
+ ✅ SAT :: Story-Level
+
+
+=== Processing Story: US-003 ===
+
+[Checking AC] US-003 :: AC-014
+ ✅ SAT :: AC-014
+
+[Checking AC] US-003 :: AC-015
+ ✅ SAT :: AC-015
+
+[Checking AC] US-003 :: AC-016
+ ✅ SAT :: AC-016
+
+[Checking AC] US-003 :: AC-017
+ ✅ SAT :: AC-017
+
+[Checking AC] US-003 :: AC-018
+ ✅ SAT :: AC-018
+
+[Checking Compounded AC] US-003
+ ✅ SAT :: Compounded AC
+
+[Checking Story-Level Consistency] US-003
+ ✅ SAT :: Story-Level
+
+
+=== Processing Story: US-004 ===
+
+[Checking AC] US-004 :: AC-019
+ ✅ SAT :: AC-019
+
+[Checking AC] US-004 :: AC-020
+ ✅ SAT :: AC-020
+
+[Checking AC] US-004 :: AC-021
+ ✅ SAT :: AC-021
+
+[Checking AC] US-004 :: AC-022
+ ✅ SAT :: AC-022
+
+[Checking AC] US-004 :: AC-023
+ ✅ SAT :: AC-023
+
+[Checking AC] US-004 :: AC-024
+ ✅ SAT :: AC-024
+
+[Checking Compounded AC] US-004
+ ✅ SAT :: Compounded AC
+
+[Checking Story-Level Consistency] US-004
+ ✅ SAT :: Story-Level
+
+
+=== Processing Story: US-005 ===
+
+[Checking AC] US-005 :: AC-025
+ ✅ SAT :: AC-025
+
+[Checking AC] US-005 :: AC-026
+ ✅ SAT :: AC-026
+
+[Checking AC] US-005 :: AC-027
+ ✅ SAT :: AC-027
+
+[Checking AC] US-005 :: AC-028
+ ✅ SAT :: AC-028
+
+[Checking AC] US-005 :: AC-029
+ ✅ SAT :: AC-029
+
+[Checking AC] US-005 :: AC-030
+ ✅ SAT :: AC-030
+
+[Checking Compounded AC] US-005
+ ✅ SAT :: Compounded AC
+
+[Checking Story-Level Consistency] US-005
+ ✅ SAT :: Story-Level
+ 

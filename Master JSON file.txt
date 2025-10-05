@@ -1,0 +1,349 @@
+user_stories_data =
+ [
+  {
+    "story_id": "US-001",
+    "title": "Customer Secure Authentication",
+    "description": "System must validate customer credentials to provide secure access to financial information.",
+    "acceptance_criteria": [
+      {
+        "ac_id": "AC-001",
+        "criteria": "A customer can navigate to the application login page.",
+        "related_entities": ["customer", "authentication_module"],
+        "temporal_order": 1
+      },
+      {
+        "ac_id": "AC-002",
+        "criteria": "The system must present input fields for username and password.",
+        "related_entities": ["system", "authentication_module"],
+        "temporal_order": 2
+      },
+      {
+        "ac_id": "AC-003",
+        "criteria": "A customer can submit their credentials for verification.",
+        "related_entities": ["customer", "authentication_module"],
+        "temporal_order": 3
+      },
+      {
+        "ac_id": "AC-004",
+        "criteria": "The system must validate submitted credentials against stored customer records.",
+        "related_entities": ["system", "authentication_module"],
+        "temporal_order": 4
+      },
+      {
+        "ac_id": "AC-005",
+        "criteria": "If credentials are valid, then the system must grant the customer access to the application dashboard.",
+        "related_entities": ["system", "authentication_module"],
+        "temporal_order": 5
+      },
+      {
+        "ac_id": "AC-006",
+        "criteria": "If credentials are not valid, then the system must display an authentication error message.",
+        "related_entities": ["system", "authentication_module"],
+        "temporal_order": 5
+      }
+    ],
+    "compounded_ac": {
+      "ac_ids": ["AC-001", "AC-002", "AC-003", "AC-004", "AC-005", "AC-006"]
+    },
+    "story_level_check": ["compounded_ac", "description"],
+    "cross_story_dependencies": [],
+    "temporal_constraints": [
+      {
+        "precedes": "AC-002",
+        "follows": "AC-001"
+      },
+      {
+        "precedes": "AC-003",
+        "follows": "AC-002"
+      },
+      {
+        "precedes": "AC-004",
+        "follows": "AC-003"
+      },
+      {
+        "precedes": "AC-005",
+        "follows": "AC-004"
+      },
+      {
+        "precedes": "AC-006",
+        "follows": "AC-004"
+      }
+    ]
+  },
+  {
+    "story_id": "US-002",
+    "title": "New Customer Onboarding and Profile Creation",
+    "description": "System must capture customer details, risk profile, and investment amount to create a complete investment account.",
+    "acceptance_criteria": [
+      {
+        "ac_id": "AC-007",
+        "criteria": "A logged-in customer can access the profile creation page.",
+        "related_entities": ["customer", "customer_profile_module"],
+        "temporal_order": 1
+      },
+      {
+        "ac_id": "AC-008",
+        "criteria": "The system must present a form to capture required personal details.",
+        "related_entities": ["system", "customer_profile_module"],
+        "temporal_order": 2
+      },
+      {
+        "ac_id": "AC-009",
+        "criteria": "The system must present a questionnaire to determine the customer's risk profile.",
+        "related_entities": ["system", "customer_profile_module"],
+        "temporal_order": 3
+      },
+      {
+        "ac_id": "AC-010",
+        "criteria": "The system must calculate a risk score based on the customer's questionnaire responses.",
+        "related_entities": ["system", "customer_profile_module"],
+        "temporal_order": 4
+      },
+      {
+        "ac_id": "AC-011",
+        "criteria": "The system must allow the customer to input an initial investment amount.",
+        "related_entities": ["system", "customer_profile_module"],
+        "temporal_order": 5
+      },
+      {
+        "ac_id": "AC-012",
+        "criteria": "The system must validate that every investment amount is a positive numerical value.",
+        "related_entities": ["system", "customer_profile_module"],
+        "temporal_order": 6
+      },
+      {
+        "ac_id": "AC-013",
+        "criteria": "Upon submission of all valid information, the system must create a complete customer profile record.",
+        "related_entities": ["system", "customer_profile_module"],
+        "temporal_order": 7
+      }
+    ],
+    "compounded_ac": {
+      "ac_ids": ["AC-007", "AC-008", "AC-009", "AC-010", "AC-011", "AC-012", "AC-013"]
+    },
+    "story_level_check": ["compounded_ac", "description"],
+    "cross_story_dependencies": ["US-001"],
+    "temporal_constraints": [
+      {
+        "precedes": "AC-008",
+        "follows": "AC-007"
+      },
+      {
+        "precedes": "AC-009",
+        "follows": "AC-008"
+      },
+      {
+        "precedes": "AC-010",
+        "follows": "AC-009"
+      },
+      {
+        "precedes": "AC-011",
+        "follows": "AC-010"
+      },
+      {
+        "precedes": "AC-012",
+        "follows": "AC-011"
+      },
+      {
+        "precedes": "AC-013",
+        "follows": "AC-012"
+      }
+    ]
+  },
+  {
+    "story_id": "US-003",
+    "title": "Automated Ingestion of Real-time Market Data",
+    "description": "System must automatically fetch and store real-time market data to ensure investment analysis is current.",
+    "acceptance_criteria": [
+      {
+        "ac_id": "AC-014",
+        "criteria": "The system must periodically query external sources for Fixed Deposit interest rates.",
+        "related_entities": ["system", "data_analysis_module"],
+        "temporal_order": 1
+      },
+      {
+        "ac_id": "AC-015",
+        "criteria": "The system must periodically query external sources for stock prices.",
+        "related_entities": ["system", "data_analysis_module"],
+        "temporal_order": 2
+      },
+      {
+        "ac_id": "AC-016",
+        "criteria": "The system must periodically query external sources for mutual fund NAVs.",
+        "related_entities": ["system", "data_analysis_module"],
+        "temporal_order": 3
+      },
+      {
+        "ac_id": "AC-017",
+        "criteria": "All fetched market data must be stored with a precise timestamp.",
+        "related_entities": ["system", "data_analysis_module"],
+        "temporal_order": 4
+      },
+      {
+        "ac_id": "AC-018",
+        "criteria": "If any external data source is unavailable, then the system must log an error and attempt a retry.",
+        "related_entities": ["system", "data_analysis_module"],
+        "temporal_order": 5
+      }
+    ],
+    "compounded_ac": {
+      "ac_ids": ["AC-014", "AC-015", "AC-016", "AC-017", "AC-018"]
+    },
+    "story_level_check": ["compounded_ac", "description"],
+    "cross_story_dependencies": [],
+    "temporal_constraints": [
+      {
+        "precedes": "AC-015",
+        "follows": "AC-014"
+      },
+      {
+        "precedes": "AC-016",
+        "follows": "AC-015"
+      },
+      {
+        "precedes": "AC-017",
+        "follows": "AC-016"
+      }
+    ]
+  },
+  {
+    "story_id": "US-004",
+    "title": "Manager Views Algorithmic Investment Suggestions",
+    "description": "System must analyze pooled funds and market data to provide algorithmic investment suggestions for managers.",
+    "acceptance_criteria": [
+      {
+        "ac_id": "AC-019",
+        "criteria": "A manager can access the investment decision dashboard.",
+        "related_entities": ["manager", "investment_module"],
+        "temporal_order": 1
+      },
+      {
+        "ac_id": "AC-020",
+        "criteria": "The system must display the total amount of pooled customer investments available for allocation.",
+        "related_entities": ["system", "investment_module", "portfolio_module"],
+        "temporal_order": 2
+      },
+      {
+        "ac_id": "AC-021",
+        "criteria": "The system must analyze all available investment options using the latest fetched market data.",
+        "related_entities": ["system", "investment_module", "data_analysis_module"],
+        "temporal_order": 3
+      },
+      {
+        "ac_id": "AC-022",
+        "criteria": "The system must generate a list of suggested investments ranked by potential return.",
+        "related_entities": ["system", "investment_module"],
+        "temporal_order": 4
+      },
+      {
+        "ac_id": "AC-023",
+        "criteria": "Every investment suggestion must include the investment type, name, expected return, and an associated risk level.",
+        "related_entities": ["system", "investment_module"],
+        "temporal_order": 5
+      },
+      {
+        "ac_id": "AC-024",
+        "criteria": "Every investment analysis must calculate potential outcomes against a 10 percent target return rate.",
+        "related_entities": ["system", "investment_module"],
+        "temporal_order": 6
+      }
+    ],
+    "compounded_ac": {
+      "ac_ids": ["AC-019", "AC-020", "AC-021", "AC-022", "AC-023", "AC-024"]
+    },
+    "story_level_check": ["compounded_ac", "description"],
+    "cross_story_dependencies": ["US-001", "US-002", "US-003"],
+    "temporal_constraints": [
+      {
+        "precedes": "AC-020",
+        "follows": "AC-019"
+      },
+      {
+        "precedes": "AC-021",
+        "follows": "AC-020"
+      },
+      {
+        "precedes": "AC-022",
+        "follows": "AC-021"
+      },
+      {
+        "precedes": "AC-023",
+        "follows": "AC-022"
+      },
+      {
+        "precedes": "AC-024",
+        "follows": "AC-023"
+      }
+    ]
+  },
+  {
+    "story_id": "US-005",
+    "title": "Customer Views Real-time Investment Portfolio",
+    "description": "System must display a customer's real-time portfolio value and performance to allow for investment tracking.",
+    "acceptance_criteria": [
+      {
+        "ac_id": "AC-025",
+        "criteria": "A customer can navigate to their portfolio dashboard after a successful login.",
+        "related_entities": ["customer", "portfolio_module", "authentication_module"],
+        "temporal_order": 1
+      },
+      {
+        "ac_id": "AC-026",
+        "criteria": "The system must display the customer's total initial investment amount.",
+        "related_entities": ["system", "portfolio_module"],
+        "temporal_order": 2
+      },
+      {
+        "ac_id": "AC-027",
+        "criteria": "The system must display a detailed breakdown of all investments allocated to the customer.",
+        "related_entities": ["system", "portfolio_module"],
+        "temporal_order": 3
+      },
+      {
+        "ac_id": "AC-028",
+        "criteria": "For each investment, the system must show the current market value based on the latest data.",
+        "related_entities": ["system", "portfolio_module", "data_analysis_module"],
+        "temporal_order": 4
+      },
+      {
+        "ac_id": "AC-029",
+        "criteria": "The system must display the overall portfolio gain or loss as a percentage.",
+        "related_entities": ["system", "portfolio_module"],
+        "temporal_order": 5
+      },
+      {
+        "ac_id": "AC-030",
+        "criteria": "All portfolio data must be updated using the most recent market data available in the system.",
+        "related_entities": ["system", "portfolio_module"],
+        "temporal_order": 6
+      }
+    ],
+    "compounded_ac": {
+      "ac_ids": ["AC-025", "AC-026", "AC-027", "AC-028", "AC-029", "AC-030"]
+    },
+    "story_level_check": ["compounded_ac", "description"],
+    "cross_story_dependencies": ["US-001", "US-003", "US-004"],
+    "temporal_constraints": [
+      {
+        "precedes": "AC-026",
+        "follows": "AC-025"
+      },
+      {
+        "precedes": "AC-027",
+        "follows": "AC-026"
+      },
+      {
+        "precedes": "AC-028",
+        "follows": "AC-027"
+      },
+      {
+        "precedes": "AC-029",
+        "follows": "AC-028"
+      },
+      {
+        "precedes": "AC-030",
+        "follows": "AC-029"
+      }
+    ]
+  }
+]

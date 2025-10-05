@@ -1,0 +1,10 @@
+Entity vs AC mapping :
+{
+'authentication_module': ['AC-001', 'AC-002', 'AC-003', 'AC-004', 'AC-005', 'AC-006', 'AC-025'], 
+'customer': ['AC-001', 'AC-003', 'AC-007', 'AC-025'],
+ 'system': ['AC-002', 'AC-004', 'AC-005', 'AC-006', 'AC-008', 'AC-009', 'AC-010', 'AC-011', 'AC-012', 'AC-013', 'AC-014', 'AC-015', 'AC-016', 'AC-017', 'AC-018', 'AC-020', 'AC-021', 'AC-022', 'AC-023', 'AC-024', 'AC-026', 'AC-027', 'AC-028', 'AC-029', 'AC-030'], 
+'customer_profile_module': ['AC-007', 'AC-008', 'AC-009', 'AC-010', 'AC-011', 'AC-012', 'AC-013'], 'data_analysis_module': ['AC-014', 'AC-015', 'AC-016', 'AC-017', 'AC-018', 'AC-021', 'AC-028'], 
+'manager': ['AC-019'],
+ 'investment_module': ['AC-019', 'AC-020', 'AC-021', 'AC-022', 'AC-023', 'AC-024'], 
+'portfolio_module': ['AC-020', 'AC-025', 'AC-026', 'AC-027', 'AC-028', 'AC-029', 'AC-030']
+}

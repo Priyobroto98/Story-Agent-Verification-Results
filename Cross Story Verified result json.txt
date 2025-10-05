@@ -1,0 +1,553 @@
+Cross Story Verified result json:
+
+{
+  "entities": {
+    "authentication_module": {
+      "entity": "authentication_module",
+      "individual_ac_checks": [
+        {
+          "ac_id": "AC-001",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.822042226791382,
+          "model_text": "[rule1 = True,\n Customer = [else -> True],\n CanNavigateToApplicationLoginPage = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-002",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 8.892350673675537,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n PresentsInputFields = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-003",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.312143087387085,
+          "model_text": "[rule1 = True,\n Customer = [else -> False],\n CanSubmitCredentialsForVerification = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-004",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 8.365269899368286,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n SubmittedCredentials = [else -> False],\n ValidatesAgainst = [else -> False],\n StoredCustomerRecords = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-005",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.5985286235809326,
+          "model_text": "[rule1 = True,\n GrantsAccessToApplicationDashboard = [else -> True],\n ValidCredentials = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-006",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.482785940170288,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n DisplayAuthenticationErrorMessage = [else -> True],\n ValidCredentials = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-025",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.485091924667358,
+          "model_text": "[rule1 = True,\n Customer = [else -> True],\n NavigateToPortfolioDashboard = [else -> False],\n SuccessfulLogin = [else -> False]]"
+        }
+      ],
+      "compound": {
+        "status": "SAT",
+        "compound_formula": "∀x (Customer(x) → CanNavigateToApplicationLoginPage(x)) ∧ ∀x (System(x) → (PresentsInputFields(x, username) ∧ PresentsInputFields(x, password))) ∧ ∀x (Customer(x) → CanSubmitCredentialsForVerification(x)) ∧ ∀x∀y (System(x) ∧ SubmittedCredentials(y) ∧ StoredCustomerRecords(x) → ValidatesAgainst(x, y)) ∧ ∀x (ValidCredentials(x) → GrantsAccessToApplicationDashboard(x)) ∧ ∀x (System(x) ∧ ¬ValidCredentials(x) → DisplayAuthenticationErrorMessage(x)) ∧ ∀x (Customer(x) ∧ SuccessfulLogin(x) → NavigateToPortfolioDashboard(x))",
+        "z3_model": "[password = U!val!0,\n username = U!val!0,\n NavigateToPortfolioDashboard = [else -> False],\n CanSubmitCredentialsForVerification = [else -> True],\n System = [else -> False],\n Customer = [else -> False],\n SubmittedCredentials = [else -> False],\n ValidCredentials = [else -> False],\n CanNavigateToApplicationLoginPage = [else -> False],\n StoredCustomerRecords = [else -> True],\n ValidatesAgainst = [else -> True],\n PresentsInputFields = [else -> False],\n SuccessfulLogin = [else -> True],\n GrantsAccessToApplicationDashboard = [else -> True],\n DisplayAuthenticationErrorMessage = [else -> False]]"
+      }
+    },
+    "customer": {
+      "entity": "customer",
+      "individual_ac_checks": [
+        {
+          "ac_id": "AC-001",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.822042226791382,
+          "model_text": "[rule1 = True,\n Customer = [else -> True],\n CanNavigateToApplicationLoginPage = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-003",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.312143087387085,
+          "model_text": "[rule1 = True,\n Customer = [else -> False],\n CanSubmitCredentialsForVerification = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-007",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.775742769241333,
+          "model_text": "[rule1 = True,\n Customer = [else -> False],\n LoggedIn = [else -> True],\n CanAccessProfileCreationPage = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-025",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.485091924667358,
+          "model_text": "[rule1 = True,\n Customer = [else -> True],\n NavigateToPortfolioDashboard = [else -> False],\n SuccessfulLogin = [else -> False]]"
+        }
+      ],
+      "compound": {
+        "status": "SAT",
+        "compound_formula": "∀x (Customer(x) → CanNavigateToApplicationLoginPage(x)) ∧ ∀x (Customer(x) → CanSubmitCredentialsForVerification(x)) ∧ ∀x (Customer(x) ∧ LoggedIn(x) → CanAccessProfileCreationPage(x)) ∧ ∀x (Customer(x) ∧ SuccessfulLogin(x) → NavigateToPortfolioDashboard(x))",
+        "z3_model": "[LoggedIn = [else -> True],\n NavigateToPortfolioDashboard = [else -> True],\n CanNavigateToApplicationLoginPage = [else -> True],\n Customer = [else -> False],\n SuccessfulLogin = [else -> False],\n CanSubmitCredentialsForVerification = [else -> False],\n CanAccessProfileCreationPage = [else -> True]]"
+      }
+    },
+    "system": {
+      "entity": "system",
+      "individual_ac_checks": [
+        {
+          "ac_id": "AC-002",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 8.892350673675537,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n PresentsInputFields = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-004",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 8.365269899368286,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n SubmittedCredentials = [else -> False],\n ValidatesAgainst = [else -> False],\n StoredCustomerRecords = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-005",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.5985286235809326,
+          "model_text": "[rule1 = True,\n GrantsAccessToApplicationDashboard = [else -> True],\n ValidCredentials = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-006",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.482785940170288,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n DisplayAuthenticationErrorMessage = [else -> True],\n ValidCredentials = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-008",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 6.4896581172943115,
+          "model_text": "[CapturePersonalDetails = 0,\n rule1 = True,\n System = [else -> True],\n PresentsForm = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-009",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.300114870071411,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n PresentsQuestionnaire = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-010",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.681607961654663,
+          "model_text": "[rule1 = True,\n Customer = [else -> True],\n System = [else -> False],\n CalculatesRiskScore = [else -> False],\n Questionnaire = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-011",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.917213678359985,
+          "model_text": "[rule1 = True,\n y = 2,\n Customer = [else -> False],\n System = [else -> False],\n AllowsInputOfInitialInvestmentAmount = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-012",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.6777994632720947,
+          "model_text": "[rule1 = True,\n InvestmentAmount = [else -> False],\n PositiveNumericalValue = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-013",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.661749839782715,
+          "model_text": "[rule1 = True,\n CreateCompleteCustomerProfileRecord = [else -> True],\n SubmissionOfValidInformation = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-014",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.6997313499450684,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n PeriodicallyQueriesExternalSources = [else -> True],\n ForFixedDepositInterestRates = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-015",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.779845237731934,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n QueriesExternalSources = [else -> False],\n ForStockPrices = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-016",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.2749717235565186,
+          "model_text": "[rule1 = True,\n QueriesNAVs = [else -> False],\n System = [else -> False],\n ExternalSource = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-017",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.1716790199279785,
+          "model_text": "[rule1 = True,\n Fetched = [else -> False],\n MarketData = [else -> True],\n HasPreciseTimestamp = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-018",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.668606281280518,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n AttemptRetry = [else -> False],\n UnavailableExternalDataSource = [else -> True],\n LogError = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-020",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.950669050216675,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-021",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.932649850845337,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n InvestmentOptions = [else -> False],\n AnalyzesLatestMarketData = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-022",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.649569511413574,
+          "model_text": "[rule1 = True,\n GeneratesSuggestedInvestments = [else -> False],\n System = [else -> False],\n RanksByPotentialReturn = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-023",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.584701776504517,
+          "model_text": "[rule1 = True,\n IncludesRiskLevel = [else -> True],\n IncludesExpectedReturn = [else -> False],\n IncludesInvestmentName = [else -> False],\n IncludesInvestmentType = [else -> False],\n InvestmentSuggestion = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-024",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.506375789642334,
+          "model_text": "[rule1 = True,\n CalculatesPotentialOutcomesAgainstTargetReturnRate = [else ->\n                                        True],\n InvestmentAnalysis = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-026",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 14.582898378372192,
+          "model_text": "[rule1 = True,\n y = 0,\n DisplaysTotalInitialInvestment = [else -> False],\n System = [else -> False],\n Customer = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-027",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.141485691070557,
+          "model_text": "[rule1 = True,\n Customer = [else -> False],\n System = [else -> True],\n AllocatedInvestments = [else -> False],\n DisplaysDetailedBreakdown = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-028",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.654808521270752,
+          "model_text": "[rule1 = True,\n Investment = [else -> False],\n ShowsCurrentMarketValue = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-029",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.003544330596924,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n DisplaysPercentage = [else -> False],\n DisplaysPortfolioGainOrLoss = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-030",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.5679171085357666,
+          "model_text": "[rule1 = True,\n PortfolioData = [else -> False],\n UpdatedUsingMostRecentMarketData = [else -> False]]"
+        }
+      ],
+      "compound": {
+        "status": "SAT",
+        "compound_formula": "∀x (System(x) → (PresentsInputFields(x, username) ∧ PresentsInputFields(x, password))) ∧ ∀x∀y (System(x) ∧ SubmittedCredentials(y) ∧ StoredCustomerRecords(x) → ValidatesAgainst(x, y)) ∧ ∀x (ValidCredentials(x) → GrantsAccessToApplicationDashboard(x)) ∧ ∀x (System(x) ∧ ¬ValidCredentials(x) → DisplayAuthenticationErrorMessage(x)) ∧ ∀x (System(x) → PresentsForm(x, CapturePersonalDetails)) ∧ ∀x (System(x) → PresentsQuestionnaire(x)) ∧ ∀x∀y (System(x) ∧ Customer(y) ∧ Questionnaire(y) → CalculatesRiskScore(x, y)) ∧ ∀x (System(x) ∧ Customer(y) → AllowsInputOfInitialInvestmentAmount(y, x)) ∧ ∀x (InvestmentAmount(x) → PositiveNumericalValue(x)) ∧ ∀x (SubmissionOfValidInformation(x) → CreateCompleteCustomerProfileRecord(x)) ∧ ∀x (System(x) → (PeriodicallyQueriesExternalSources(x) ∧ ForFixedDepositInterestRates(x))) ∧ ∀x (System(x) → (QueriesExternalSources(x) ∧ ForStockPrices(x))) ∧ ∀x (System(x) → (∃y (ExternalSource(y) ∧ QueriesNAVs(x, y)))) ∧ ∀x (MarketData(x) ∧ Fetched(x) → HasPreciseTimestamp(x)) ∧ ∀x (System(x) ∧ UnavailableExternalDataSource(x) → (LogError(x) ∧ AttemptRetry(x))) ∧ ∀x (System(x) → DisplaysTotalPooledCustomerInvestments(x)) ∧ ∀x (System(x) ∧ InvestmentOptions(x) → AnalyzesLatestMarketData(x)) ∧ ∀x (System(x) → (GeneratesSuggestedInvestments(x) ∧ RanksByPotentialReturn(x))) ∧ ∀x (InvestmentSuggestion(x) → (IncludesInvestmentType(x) ∧ IncludesInvestmentName(x) ∧ IncludesExpectedReturn(x) ∧ IncludesRiskLevel(x))) ∧ ∀x (InvestmentAnalysis(x) → CalculatesPotentialOutcomesAgainstTargetReturnRate(x, 10)) ∧ ∀x (System(x) ∧ Customer(y) → DisplaysTotalInitialInvestment(x, y)) ∧ ∀x∀y (System(x) ∧ Customer(y) ∧ AllocatedInvestments(y, x) → DisplaysDetailedBreakdown(x, y)) ∧ ∀x (Investment(x) → ShowsCurrentMarketValue(x)) ∧ ∀x (System(x) ∧ DisplaysPortfolioGainOrLoss(x) → DisplaysPercentage(x)) ∧ ∀x (PortfolioData(x) → UpdatedUsingMostRecentMarketData(x))",
+        "z3_model": "[y = U!val!0,\n password = U!val!0,\n username = U!val!0,\n CapturePersonalDetails = U!val!0,\n QueriesExternalSources = [else -> True],\n System = [else -> False],\n DisplaysDetailedBreakdown = [else -> True],\n SubmittedCredentials = [else -> False],\n ShowsCurrentMarketValue = [else -> False],\n ValidCredentials = [else -> False],\n CreateCompleteCustomerProfileRecord = [else -> True],\n GeneratesSuggestedInvestments = [else -> False],\n PresentsQuestionnaire = [else -> True],\n InvestmentAmount = [else -> False],\n CalculatesRiskScore = [else -> True],\n GrantsAccessToApplicationDashboard = [else -> False],\n ExternalSource = [else -> False],\n PositiveNumericalValue = [else -> False],\n AllocatedInvestments = [else -> False],\n InvestmentOptions = [else -> True],\n ForFixedDepositInterestRates = [else -> False],\n StoredCustomerRecords = [else -> False],\n Fetched = [else -> False],\n DisplayAuthenticationErrorMessage = [else -> True],\n Questionnaire = [else -> False],\n InvestmentAnalysis = [else -> False],\n Customer = [else -> False],\n Investment = [else -> False],\n SubmissionOfValidInformation = [else -> False],\n InvestmentSuggestion = [else -> False],\n PeriodicallyQueriesExternalSources = [else -> True],\n ValidatesAgainst = [else -> False],\n AttemptRetry = [else -> True],\n ForStockPrices = [else -> True],\n PresentsForm = [else -> True],\n IncludesRiskLevel = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> False],\n PortfolioData = [else -> False],\n PresentsInputFields = [else -> True],\n MarketData = [else -> False],\n UnavailableExternalDataSource = [else -> True],\n LogError = [else -> False],\n DisplaysTotalInitialInvestment = [else -> True],\n AllowsInputOfInitialInvestmentAmount = [else -> False],\n DisplaysPortfolioGainOrLoss = [else -> False],\n UpdatedUsingMostRecentMarketData = [else -> False],\n QueriesNAVs = [else -> True],\n RanksByPotentialReturn = [else -> True],\n HasPreciseTimestamp = [else -> True],\n AnalyzesLatestMarketData = [else -> True],\n CalculatesPotentialOutcomesAgainstTargetReturnRate = [else ->\n                                        False],\n IncludesInvestmentType = [else -> True],\n IncludesInvestmentName = [else -> False],\n IncludesExpectedReturn = [else -> False],\n DisplaysPercentage = [else -> True]]"
+      }
+    },
+    "customer_profile_module": {
+      "entity": "customer_profile_module",
+      "individual_ac_checks": [
+        {
+          "ac_id": "AC-007",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.775742769241333,
+          "model_text": "[rule1 = True,\n Customer = [else -> False],\n LoggedIn = [else -> True],\n CanAccessProfileCreationPage = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-008",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 6.4896581172943115,
+          "model_text": "[CapturePersonalDetails = 0,\n rule1 = True,\n System = [else -> True],\n PresentsForm = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-009",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.300114870071411,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n PresentsQuestionnaire = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-010",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.681607961654663,
+          "model_text": "[rule1 = True,\n Customer = [else -> True],\n System = [else -> False],\n CalculatesRiskScore = [else -> False],\n Questionnaire = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-011",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.917213678359985,
+          "model_text": "[rule1 = True,\n y = 2,\n Customer = [else -> False],\n System = [else -> False],\n AllowsInputOfInitialInvestmentAmount = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-012",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.6777994632720947,
+          "model_text": "[rule1 = True,\n InvestmentAmount = [else -> False],\n PositiveNumericalValue = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-013",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.661749839782715,
+          "model_text": "[rule1 = True,\n CreateCompleteCustomerProfileRecord = [else -> True],\n SubmissionOfValidInformation = [else -> False]]"
+        }
+      ],
+      "compound": {
+        "status": "SAT",
+        "compound_formula": "∀x (Customer(x) ∧ LoggedIn(x) → CanAccessProfileCreationPage(x)) ∧ ∀x (System(x) → PresentsForm(x, CapturePersonalDetails)) ∧ ∀x (System(x) → PresentsQuestionnaire(x)) ∧ ∀x∀y (System(x) ∧ Customer(y) ∧ Questionnaire(y) → CalculatesRiskScore(x, y)) ∧ ∀x (System(x) ∧ Customer(y) → AllowsInputOfInitialInvestmentAmount(y, x)) ∧ ∀x (InvestmentAmount(x) → PositiveNumericalValue(x)) ∧ ∀x (SubmissionOfValidInformation(x) → CreateCompleteCustomerProfileRecord(x))",
+        "z3_model": "[CapturePersonalDetails = U!val!0,\n y = U!val!0,\n CanAccessProfileCreationPage = [else -> True],\n PresentsQuestionnaire = [else -> False],\n LoggedIn = [else -> False],\n System = [else -> False],\n Customer = [else -> True],\n PresentsForm = [else -> True],\n InvestmentAmount = [else -> False],\n AllowsInputOfInitialInvestmentAmount = [else -> True],\n CalculatesRiskScore = [else -> False],\n SubmissionOfValidInformation = [else -> False],\n CreateCompleteCustomerProfileRecord = [else -> True],\n PositiveNumericalValue = [else -> False],\n Questionnaire = [else -> True]]"
+      }
+    },
+    "data_analysis_module": {
+      "entity": "data_analysis_module",
+      "individual_ac_checks": [
+        {
+          "ac_id": "AC-014",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.6997313499450684,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n PeriodicallyQueriesExternalSources = [else -> True],\n ForFixedDepositInterestRates = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-015",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.779845237731934,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n QueriesExternalSources = [else -> False],\n ForStockPrices = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-016",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.2749717235565186,
+          "model_text": "[rule1 = True,\n QueriesNAVs = [else -> False],\n System = [else -> False],\n ExternalSource = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-017",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.1716790199279785,
+          "model_text": "[rule1 = True,\n Fetched = [else -> False],\n MarketData = [else -> True],\n HasPreciseTimestamp = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-018",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.668606281280518,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n AttemptRetry = [else -> False],\n UnavailableExternalDataSource = [else -> True],\n LogError = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-021",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.932649850845337,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n InvestmentOptions = [else -> False],\n AnalyzesLatestMarketData = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-028",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.654808521270752,
+          "model_text": "[rule1 = True,\n Investment = [else -> False],\n ShowsCurrentMarketValue = [else -> False]]"
+        }
+      ],
+      "compound": {
+        "status": "SAT",
+        "compound_formula": "∀x (System(x) → (PeriodicallyQueriesExternalSources(x) ∧ ForFixedDepositInterestRates(x))) ∧ ∀x (System(x) → (QueriesExternalSources(x) ∧ ForStockPrices(x))) ∧ ∀x (System(x) → (∃y (ExternalSource(y) ∧ QueriesNAVs(x, y)))) ∧ ∀x (MarketData(x) ∧ Fetched(x) → HasPreciseTimestamp(x)) ∧ ∀x (System(x) ∧ UnavailableExternalDataSource(x) → (LogError(x) ∧ AttemptRetry(x))) ∧ ∀x (System(x) ∧ InvestmentOptions(x) → AnalyzesLatestMarketData(x)) ∧ ∀x (Investment(x) → ShowsCurrentMarketValue(x))",
+        "z3_model": "[ForStockPrices = [else -> False],\n QueriesExternalSources = [else -> True],\n System = [else -> False],\n InvestmentOptions = [else -> True],\n ForFixedDepositInterestRates = [else -> True],\n ShowsCurrentMarketValue = [else -> True],\n Fetched = [else -> False],\n QueriesNAVs = [else -> False],\n HasPreciseTimestamp = [else -> True],\n AnalyzesLatestMarketData = [else -> True],\n LogError = [else -> False],\n UnavailableExternalDataSource = [else -> True],\n MarketData = [else -> False],\n Investment = [else -> True],\n PeriodicallyQueriesExternalSources = [else -> True],\n ExternalSource = [else -> False],\n AttemptRetry = [else -> True]]"
+      }
+    },
+    "manager": {
+      "entity": "manager",
+      "individual_ac_checks": [
+        {
+          "ac_id": "AC-019",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.132946729660034,
+          "model_text": "[rule1 = True,\n Manager = [else -> False],\n CanAccessInvestmentDecisionDashboard = [else -> False]]"
+        }
+      ],
+      "compound": {
+        "status": "SAT",
+        "compound_formula": "∀x (Manager(x) → CanAccessInvestmentDecisionDashboard(x))",
+        "z3_model": "[CanAccessInvestmentDecisionDashboard = [else -> False],\n Manager = [else -> False]]"
+      }
+    },
+    "investment_module": {
+      "entity": "investment_module",
+      "individual_ac_checks": [
+        {
+          "ac_id": "AC-019",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.132946729660034,
+          "model_text": "[rule1 = True,\n Manager = [else -> False],\n CanAccessInvestmentDecisionDashboard = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-020",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.950669050216675,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-021",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.932649850845337,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n InvestmentOptions = [else -> False],\n AnalyzesLatestMarketData = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-022",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.649569511413574,
+          "model_text": "[rule1 = True,\n GeneratesSuggestedInvestments = [else -> False],\n System = [else -> False],\n RanksByPotentialReturn = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-023",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.584701776504517,
+          "model_text": "[rule1 = True,\n IncludesRiskLevel = [else -> True],\n IncludesExpectedReturn = [else -> False],\n IncludesInvestmentName = [else -> False],\n IncludesInvestmentType = [else -> False],\n InvestmentSuggestion = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-024",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.506375789642334,
+          "model_text": "[rule1 = True,\n CalculatesPotentialOutcomesAgainstTargetReturnRate = [else ->\n                                        True],\n InvestmentAnalysis = [else -> False]]"
+        }
+      ],
+      "compound": {
+        "status": "SAT",
+        "compound_formula": "∀x (Manager(x) → CanAccessInvestmentDecisionDashboard(x)) ∧ ∀x (System(x) → DisplaysTotalPooledCustomerInvestments(x)) ∧ ∀x (System(x) ∧ InvestmentOptions(x) → AnalyzesLatestMarketData(x)) ∧ ∀x (System(x) → (GeneratesSuggestedInvestments(x) ∧ RanksByPotentialReturn(x))) ∧ ∀x (InvestmentSuggestion(x) → (IncludesInvestmentType(x) ∧ IncludesInvestmentName(x) ∧ IncludesExpectedReturn(x) ∧ IncludesRiskLevel(x))) ∧ ∀x (InvestmentAnalysis(x) → CalculatesPotentialOutcomesAgainstTargetReturnRate(x, 10))",
+        "z3_model": "[CanAccessInvestmentDecisionDashboard = [else -> True],\n System = [else -> False],\n InvestmentOptions = [else -> False],\n IncludesRiskLevel = [else -> True],\n DisplaysTotalPooledCustomerInvestments = [else -> True],\n GeneratesSuggestedInvestments = [else -> False],\n RanksByPotentialReturn = [else -> True],\n AnalyzesLatestMarketData = [else -> False],\n InvestmentAnalysis = [else -> False],\n CalculatesPotentialOutcomesAgainstTargetReturnRate = [else ->\n                                        True],\n IncludesInvestmentType = [else -> False],\n IncludesInvestmentName = [else -> True],\n InvestmentSuggestion = [else -> False],\n Manager = [else -> False],\n IncludesExpectedReturn = [else -> False]]"
+      }
+    },
+    "portfolio_module": {
+      "entity": "portfolio_module",
+      "individual_ac_checks": [
+        {
+          "ac_id": "AC-020",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.950669050216675,
+          "model_text": "[rule1 = True,\n System = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> True]]"
+        },
+        {
+          "ac_id": "AC-025",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.485091924667358,
+          "model_text": "[rule1 = True,\n Customer = [else -> True],\n NavigateToPortfolioDashboard = [else -> False],\n SuccessfulLogin = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-026",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 14.582898378372192,
+          "model_text": "[rule1 = True,\n y = 0,\n DisplaysTotalInitialInvestment = [else -> False],\n System = [else -> False],\n Customer = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-027",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 5.141485691070557,
+          "model_text": "[rule1 = True,\n Customer = [else -> False],\n System = [else -> True],\n AllocatedInvestments = [else -> False],\n DisplaysDetailedBreakdown = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-028",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.654808521270752,
+          "model_text": "[rule1 = True,\n Investment = [else -> False],\n ShowsCurrentMarketValue = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-029",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 4.003544330596924,
+          "model_text": "[rule1 = True,\n System = [else -> True],\n DisplaysPercentage = [else -> False],\n DisplaysPortfolioGainOrLoss = [else -> False]]"
+        },
+        {
+          "ac_id": "AC-030",
+          "found_in_result_map": true,
+          "status": "SAT",
+          "processing_time": 3.5679171085357666,
+          "model_text": "[rule1 = True,\n PortfolioData = [else -> False],\n UpdatedUsingMostRecentMarketData = [else -> False]]"
+        }
+      ],
+      "compound": {
+        "status": "SAT",
+        "compound_formula": "∀x (System(x) → DisplaysTotalPooledCustomerInvestments(x)) ∧ ∀x (Customer(x) ∧ SuccessfulLogin(x) → NavigateToPortfolioDashboard(x)) ∧ ∀x (System(x) ∧ Customer(y) → DisplaysTotalInitialInvestment(x, y)) ∧ ∀x∀y (System(x) ∧ Customer(y) ∧ AllocatedInvestments(y, x) → DisplaysDetailedBreakdown(x, y)) ∧ ∀x (Investment(x) → ShowsCurrentMarketValue(x)) ∧ ∀x (System(x) ∧ DisplaysPortfolioGainOrLoss(x) → DisplaysPercentage(x)) ∧ ∀x (PortfolioData(x) → UpdatedUsingMostRecentMarketData(x))",
+        "z3_model": "[y = U!val!0,\n DisplaysPercentage = [else -> True],\n AllocatedInvestments = [else -> False],\n System = [else -> False],\n DisplaysDetailedBreakdown = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> False],\n ShowsCurrentMarketValue = [else -> True],\n UpdatedUsingMostRecentMarketData = [else -> False],\n DisplaysPortfolioGainOrLoss = [else -> True],\n PortfolioData = [else -> False],\n Customer = [else -> True],\n DisplaysTotalInitialInvestment = [else -> False],\n Investment = [else -> False],\n SuccessfulLogin = [else -> False],\n NavigateToPortfolioDashboard = [else -> False]]"
+      }
+    }
+  },
+  "cross_entity_compound": {
+    "status": "SAT",
+    "z3_model": "[y = U!val!0,\n password = U!val!0,\n username = U!val!0,\n CapturePersonalDetails = U!val!0,\n CanSubmitCredentialsForVerification = [else -> False],\n QueriesExternalSources = [else -> True],\n DisplaysPercentage = [else -> True],\n System = [else -> False],\n DisplaysDetailedBreakdown = [else -> False],\n SubmittedCredentials = [else -> True],\n ValidCredentials = [else -> False],\n ShowsCurrentMarketValue = [else -> True],\n CreateCompleteCustomerProfileRecord = [else -> True],\n GeneratesSuggestedInvestments = [else -> False],\n PresentsQuestionnaire = [else -> True],\n InvestmentAmount = [else -> False],\n CalculatesRiskScore = [else -> False],\n GrantsAccessToApplicationDashboard = [else -> False],\n ExternalSource = [else -> False],\n PositiveNumericalValue = [else -> True],\n Manager = [else -> True],\n AllocatedInvestments = [else -> True],\n InvestmentOptions = [else -> False],\n ForFixedDepositInterestRates = [else -> False],\n StoredCustomerRecords = [else -> False],\n Fetched = [else -> False],\n DisplayAuthenticationErrorMessage = [else -> True],\n Questionnaire = [else -> False],\n InvestmentAnalysis = [else -> True],\n Customer = [else -> False],\n Investment = [else -> False],\n InvestmentSuggestion = [else -> True],\n ValidatesAgainst = [else -> False],\n PeriodicallyQueriesExternalSources = [else -> True],\n SubmissionOfValidInformation = [else -> True],\n LoggedIn = [else -> False],\n AttemptRetry = [else -> True],\n ForStockPrices = [else -> True],\n CanAccessInvestmentDecisionDashboard = [else -> True],\n IncludesRiskLevel = [else -> True],\n PresentsForm = [else -> False],\n DisplaysTotalPooledCustomerInvestments = [else -> True],\n PresentsInputFields = [else -> False],\n PortfolioData = [else -> False],\n MarketData = [else -> True],\n UnavailableExternalDataSource = [else -> False],\n LogError = [else -> True],\n DisplaysTotalInitialInvestment = [else -> False],\n AllowsInputOfInitialInvestmentAmount = [else -> False],\n DisplaysPortfolioGainOrLoss = [else -> True],\n UpdatedUsingMostRecentMarketData = [else -> False],\n QueriesNAVs = [else -> False],\n RanksByPotentialReturn = [else -> True],\n CanAccessProfileCreationPage = [else -> False],\n HasPreciseTimestamp = [else -> True],\n AnalyzesLatestMarketData = [else -> True],\n CalculatesPotentialOutcomesAgainstTargetReturnRate = [else ->\n                                        True],\n IncludesInvestmentType = [else -> True],\n IncludesInvestmentName = [else -> True],\n CanNavigateToApplicationLoginPage = [else -> False],\n SuccessfulLogin = [else -> True],\n IncludesExpectedReturn = [else -> True],\n NavigateToPortfolioDashboard = [else -> True]]",
+    "entities_included": [
+      "authentication_module",
+      "customer",
+      "system",
+      "customer_profile_module",
+      "data_analysis_module",
+      "manager",
+      "investment_module",
+      "portfolio_module"
+    ]
+  },
+  "summary": {
+    "entities_processed": 8,
+    "entities_unsat_individual": 0,
+    "entities_compounded_unsat": 0
+  }
+} 
